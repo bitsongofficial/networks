@@ -1,165 +1,155 @@
 {
-    "jsonrpc":"2.0",
-    "id":"",
-    "result":{
-       "genesis":{
-          "genesis_time":"2019-05-10T14:26:22.968266088Z",
-          "chain_id":"bitsong-test-network-1",
-          "consensus_params":{
-             "block":{
-                "max_bytes":"22020096",
-                "max_gas":"-1",
-                "time_iota_ms":"1000"
-             },
-             "evidence":{
-                "max_age":"100000"
-             },
-             "validator":{
-                "pub_key_types":[
-                   "ed25519"
-                ]
-             }
-          },
-          "app_hash":"",
-          "app_state":{
-             "accounts":[
-                {
-                   "address":"bitsong1xfk4gzpn2xrqm047frsvzcm7mutzu4fyjvhapz",
-                   "coins":[
-                      {
-                         "denom":"ubtsg",
-                         "amount":"11628076000000000"
-                      }
-                   ],
-                   "sequence_number":"0",
-                   "account_number":"0",
-                   "original_vesting":null,
-                   "delegated_free":null,
-                   "delegated_vesting":null,
-                   "start_time":"0",
-                   "end_time":"0",
-                   "vesting_schedules":null
-                }
-             ],
-             "auth":{
-                "collected_fees":null,
-                "params":{
-                   "max_memo_characters":"256",
-                   "tx_sig_limit":"7",
-                   "tx_size_cost_per_byte":"10",
-                   "sig_verify_cost_ed25519":"590",
-                   "sig_verify_cost_secp256k1":"1000"
-                }
-             },
-             "bank":{
-                "send_enabled":true
-             },
-             "staking":{
-                "pool":{
-                   "not_bonded_tokens":"11628076000000000",
-                   "bonded_tokens":"0"
-                },
-                "params":{
-                   "unbonding_time":"259200000000000",
-                   "max_validators":16,
-                   "max_entries":7,
-                   "bond_denom":"ubtsg"
-                },
-                "last_total_power":"0",
-                "last_validator_powers":null,
-                "validators":null,
-                "delegations":null,
-                "unbonding_delegations":null,
-                "redelegations":null,
-                "exported":false
-             },
-             "distr":{
-                "fee_pool":{
-                   "community_pool":null
-                },
-                "community_tax":"0.000000000000000000",
-                "base_proposer_reward":"0.010000000000000000",
-                "bonus_proposer_reward":"0.040000000000000000",
-                "withdraw_addr_enabled":true,
-                "delegator_withdraw_infos":null,
-                "previous_proposer":"",
-                "outstanding_rewards":null,
-                "validator_accumulated_commissions":null,
-                "validator_historical_rewards":null,
-                "validator_current_rewards":null,
-                "delegator_starting_infos":null,
-                "validator_slash_events":null
-             },
-             "crisis":{
-                "constant_fee":{
-                   "denom":"stake",
-                   "amount":"1000"
-                }
-             },
-             "slashing":{
-                "params":{
-                   "max_evidence_age":"120000000000",
-                   "signed_blocks_window":"100",
-                   "min_signed_per_window":"0.500000000000000000",
-                   "downtime_jail_duration":"600000000000",
-                   "slash_fraction_double_sign":"0.050000000000000000",
-                   "slash_fraction_downtime":"0.010000000000000000"
-                },
-                "signing_infos":{
- 
-                },
-                "missed_blocks":{
- 
-                }
-             },
-             "gentxs":[
-                {
-                   "type":"auth/StdTx",
-                   "value":{
-                      "msg":[
-                         {
-                            "type":"cosmos-sdk/MsgCreateValidator",
-                            "value":{
-                               "description":{
-                                  "moniker":"bitsong-node-1",
-                                  "identity":"",
-                                  "website":"",
-                                  "details":""
-                               },
-                               "commission":{
-                                  "rate":"0.100000000000000000",
-                                  "max_rate":"0.200000000000000000",
-                                  "max_change_rate":"0.010000000000000000"
-                               },
-                               "min_self_delegation":"1",
-                               "delegator_address":"bitsong1xfk4gzpn2xrqm047frsvzcm7mutzu4fyjvhapz",
-                               "validator_address":"bitsongvaloper1xfk4gzpn2xrqm047frsvzcm7mutzu4fyngt53l",
-                               "pubkey":"bitsongvalconspub1zcjduepqj4vgkylqt0slzzs8dwp29hhmcffjr5fzq87aq03tm4fc84s58g8sqa289l",
-                               "value":{
-                                  "denom":"ubtsg",
-                                  "amount":"10000000000"
-                               }
-                            }
-                         }
-                      ],
-                      "fee":{
-                         "amount":null,
-                         "gas":"200000"
-                      },
-                      "signatures":[
-                         {
-                            "pub_key":{
-                               "type":"tendermint/PubKeySecp256k1",
-                               "value":"A032XCnyjra+o4kBjxj8HLz7sgQcA6v1Mmt4U1kU2K6F"
-                            },
-                            "signature":"a0ul3VAh0VyaKFvhr2MnCE1hyVy0h120S58S4STJboJT2/ke5KW1naj/2Ih5E25KoBX/64lmon4+AM71CtPv0g=="
-                         }
-                      ],
-                      "memo":"0edd27d5880fc7c5a25986c7451e33c40440ce48@165.22.92.107:26656"
-                   }
-                }
-             ]
-          }
-       }
+  "genesis_time": "2019-05-10T14:26:22.968266088Z",
+  "chain_id": "bitsong-test-network-1",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
     }
+  },
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "bitsong1xfk4gzpn2xrqm047frsvzcm7mutzu4fyjvhapz",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "11628076000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0",
+        "vesting_schedules": null
+      }
+    ],
+    "auth": {
+      "collected_fees": null,
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "staking": {
+      "pool": {
+        "not_bonded_tokens": "11628076000000000",
+        "bonded_tokens": "0"
+      },
+      "params": {
+        "unbonding_time": "259200000000000",
+        "max_validators": 16,
+        "max_entries": 7,
+        "bond_denom": "ubtsg"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "distr": {
+      "fee_pool": {
+        "community_pool": null
+      },
+      "community_tax": "0.000000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": null,
+      "previous_proposer": "",
+      "outstanding_rewards": null,
+      "validator_accumulated_commissions": null,
+      "validator_historical_rewards": null,
+      "validator_current_rewards": null,
+      "delegator_starting_infos": null,
+      "validator_slash_events": null
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
+      }
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "gentxs": [
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "bitsong-node-1",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "bitsong1xfk4gzpn2xrqm047frsvzcm7mutzu4fyjvhapz",
+                "validator_address": "bitsongvaloper1xfk4gzpn2xrqm047frsvzcm7mutzu4fyngt53l",
+                "pubkey": "bitsongvalconspub1zcjduepqj4vgkylqt0slzzs8dwp29hhmcffjr5fzq87aq03tm4fc84s58g8sqa289l",
+                "value": {
+                  "denom": "ubtsg",
+                  "amount": "10000000000"
+                }
+              }
+            }
+          ],
+          "fee": {
+            "amount": null,
+            "gas": "200000"
+          },
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A032XCnyjra+o4kBjxj8HLz7sgQcA6v1Mmt4U1kU2K6F"
+              },
+              "signature": "a0ul3VAh0VyaKFvhr2MnCE1hyVy0h120S58S4STJboJT2/ke5KW1naj/2Ih5E25KoBX/64lmon4+AM71CtPv0g=="
+            }
+          ],
+          "memo": "0edd27d5880fc7c5a25986c7451e33c40440ce48@165.22.92.107:26656"
+        }
+      }
+    ]
+  }
 }
