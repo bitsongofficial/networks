@@ -10,7 +10,7 @@ Fetch the testnet's `genesis.json` file into `bitsongd`'s config directory.
 
 ```bash
 mkdir -p $HOME/.bitsongd/config
-curl https://raw.githubusercontent.com/BitSongOfficial/networks/master/bitsong-testnet-1/genesis.json > $HOME/.bitsongd/config/genesis.json
+curl https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-1/genesis.json > $HOME/.bitsongd/config/genesis.json
 ```
 
 **persistent peers**
