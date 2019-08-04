@@ -5,6 +5,18 @@
 ```
 ```
 
+## Changelog
+
+```
+- Cosmos-SDK v0.36
+- Faucet address
+- Send disabled (you can enable it by gov)
+- Initial supply 116,289,228 btsg
+- New slashing parameters
+- Max validators capped to 32
+- Supply module
+```
+
 ## General configurations
 
 [Genesis start at](https://www.timeanddate.com/countdown/launch?iso=20190812T15&p0=1440&msg=bitsong-testnet-2&font=slab&csz=1)
