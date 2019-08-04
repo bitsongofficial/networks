@@ -7,7 +7,7 @@
 
 ## General configurations
 
-[Genesis start at](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20190711T15&year=2019&month=7&day=11&hour=15&min=0&sec=0&msg=bitsong-testnet-1&csz=1)
+[Genesis start at](https://www.timeanddate.com/countdown/launch?iso=20190812T15&p0=1440&msg=bitsong-testnet-2&font=slab&csz=1)
 
 ```
 "genesis_time": "2019-08-12T15:00:00Z",
