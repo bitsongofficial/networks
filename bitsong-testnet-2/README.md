@@ -1,5 +1,16 @@
 # bitsong-testnet-2
 
+```
+$ shasum -a 256 genesis.json
+e638672f2f2367f25ed5e898abe0def210fc7659b85cfb99f3a9abfcaa10f1f8  genesis.json
+```
+
+## Public Seeds
+
+```
+f9d91f1f553a945ccb621ea43c49f5fe43a08d0d@88.99.143.175:26656
+```
+
 ## Blockexplorer
 
 ```
