@@ -9,7 +9,8 @@
                   "moniker":"Rundax",
                   "identity":"",
                   "website":"",
-                  "details":""
+                  "detail
+s":""
                },
                "commission":{ 
                   "rate":"0.100000000000000000",
@@ -17,9 +18,11 @@
                   "max_change_rate":"0.010000000000000000"
                },
                "min_self_delegation":"1",
-               "delegator_address":"bitsong1jt7ngrqwym7aglummhqexy6y59asa740g300d0",
-               "validator_address":"bitsongvaloper1jt7ngrqwym7aglummhqexy6y59asa740f4nxaj",
-               "pubkey":"bitsongvalconspub1zcjduepqzaz28n5r3ff28ulth30mquh475ll985frpz39s0w6z8k9qvh0weq4dzkhu",
+               "delega
+tor_address":"bitsong1kpde9jgfusckguqkdlvynjzden6r00u70vmu8e",
+               "validator_address":"bitsongvaloper1kpde9jgfusckguqkdlvynjzden6r00u7wg84hy",
+               "pubkey":"bitsongvalco
+nspub1zcjduepqzaz28n5r3ff28ulth30mquh475ll985frpz39s0w6z8k9qvh0weq4dzkhu",
                "value":{ 
                   "denom":"ubtsg",
                   "amount":"1000000000"
@@ -37,11 +40,12 @@
          { 
             "pub_key":{ 
                "type":"tendermint/PubKeySecp256k1",
-               "value":"A37ub/bna8sCYgpDW+dJN/AwrpHJVPQz13V7WuFz/i2W"
+               "value":"A5OCLy1DqDaF+XlC55BUzRhgMSZceTLgeirOY1rputtf"
             },
-            "signature":"zo18x3Y7qNR07UhsvA6efSOCOinCjhuDg1Qa3kqbXWY7mhv0VZl8FoPLL7kxoVW5u5ccx77aa/7fG7eRrknenQ=="
+            "signature":"9z8fK7XqOHkrG84djA7L2V2BHZPbE
+BnhBbKi+q5xlaUsnaDPkevBQYNH30HZXwLpeESzWsLL/Ipt9FHN6j0/Sw=="
          }
       ],
-      "memo":"9a813983054a4591ade1e0a0c136cc8c672dfc8d@148.251.153.108:26666"
+      "memo":"9a813983054a4591ade1e0a0c136cc8c672dfc8d@148.251.153.108:26656"
    }
 }
