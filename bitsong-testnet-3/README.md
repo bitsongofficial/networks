@@ -12,6 +12,12 @@ d1ed90b4e269e66fd1e16ed5319590025be7a31a@88.99.143.175:26656 # BasBlock
 76d401cd0f8efda7cea940466c6c156eac59211c@167.71.34.212:26656 # BitCat
 ```
 
+## Persistent Peers
+
+```
+e52306bef94c74c96d63e9aeb1391e879dc64748@34.92.215.136:26656 # Forbole
+```
+
 ## Blockexplorer
 
 ```
