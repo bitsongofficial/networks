@@ -28,3 +28,8 @@ bitsongcli status | jq ".validator_info.address"
 ```bash
 curl -s http://localhost:26657/net_info 3 |grep moniker
 ```
+## Check your voting power
+
+```bash
+bitsongcli status | jq ".validator_info.voting_power"
+```
