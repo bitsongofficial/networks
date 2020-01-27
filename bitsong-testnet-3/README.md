@@ -8,7 +8,8 @@ $ shasum -a 256 genesis.json
 ## Public Seeds
 
 ```
-d1ed90b4e269e66fd1e16ed5319590025be7a31a@88.99.143.175:26656
+d1ed90b4e269e66fd1e16ed5319590025be7a31a@88.99.143.175:26656 # BasBlock
+76d401cd0f8efda7cea940466c6c156eac59211c@167.71.34.212:26656 # BitCat
 ```
 
 ## Blockexplorer
