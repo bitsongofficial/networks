@@ -21,7 +21,7 @@ d1ed90b4e269e66fd1e16ed5319590025be7a31a@88.99.143.175:26656 # BasBlock
 ## Blockexplorer
 
 ```
-[TODO]
+https://testnet.explorebitsong.com # BitSong
 ```
 
 ## Changelog
