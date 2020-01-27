@@ -8,7 +8,7 @@ $ shasum -a 256 genesis.json
 ## Public Seeds
 
 ```
-76d401cd0f8efda7cea940466c6c156eac59211c@167.71.34.212:26656 # BitCat
+4e7f4c766c3f1c0f930e12967dcc4b989ec93c37@49.12.9.221:26656 # bitangel-seed
 ```
 
 ## Persistent Peers
