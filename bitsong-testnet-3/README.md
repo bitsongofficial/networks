@@ -9,6 +9,8 @@ $ shasum -a 256 genesis.json
 
 ```
 4e7f4c766c3f1c0f930e12967dcc4b989ec93c37@49.12.9.221:26656 # bitangel-seed
+30477f65784354d74d00134d3699ca7dabe4c62c@5.189.181.62:16656 # syncnode
+be2c3d97f30012a15b8e615e81b7f8dcf7825494@46.166.138.203:26656 # simplyvc
 ```
 
 ## Persistent Peers
