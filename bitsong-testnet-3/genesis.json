@@ -1,0 +1,3162 @@
+{
+  "genesis_time": "2020-01-27T15:00:00Z",
+  "chain_id": "bitsong-testnet-3",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "200000",
+      "max_gas": "2000000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "ubtsg",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "5733820"
+      }
+    },
+    "supply": {
+      "supply": []
+    },
+    "params": null,
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "ubtsg",
+            "amount": "512000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.400000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "reward": {
+      "reward_pool": {
+        "reward_pool": []
+      },
+      "reward_tax": "0.030000000000000000",
+      "rewards": null
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "432000000000000",
+        "signed_blocks_window": "1000",
+        "min_signed_per_window": "0.050000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "accounts": [
+      {
+        "address": "bitsong1tejnyl7peaharrl5qhf5grms9w37ypj58fpxud",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "116197228000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong14dtkqvr604k3vw3c37ldn8pa9elfeatkuulmm3",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1ttsse04t2n9z4llnmrdjh9lrq45tp829cg6j5g",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1ts3y54cfrdlzfyq5w47amlrx0k4p3qcjea4sz6",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1kha2mhtxzkkhvhdq8pumra8qv3wn2f8rtcvr3j",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1x6ehz8z3rxzzmn43w5jp9vn8s46u9s47qmvhr3",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1xj8huadca80j0gcg7pe8vxn09jx945d3u7xdkf",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1z2andwcj36sjsvdkzk4tpumnnaefp7ncxckx4c",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong18p62z98hrn6h9qyqem7kxy04l8u7a4yvy0ycny",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1xsp29vcgr2xw089eaujzlsac4jp5erx05q7569",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1fx560687h07g8duae5c4m9qmyrdrcy63jfj4yp",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong15ts765x8sjrff7rvv8zrh223usg2fw7rwnjp4g",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong10n5aetzxsccds9srnnxj9k3w6prr0ks09nsxm2",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1pdfr7xuckj6lhdphdde6peres9ufwgpsxge8yc",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1749vlu8plkj6q6x0a95le6n76levhy0ys6hxv9",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1kpde9jgfusckguqkdlvynjzden6r00u70vmu8e",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1ln2820rlqagfjahluwupkd8kjr5hmy72twrsj4",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1zcjv0xlpyync2uqp6tp6md9va0ttkqm0ge335f",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1fch860h0xl69fzram623urn2h2afusttf25gaw",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1e450xh6cl2lvdkvd83kw70gv09y2gc2ttlvvj3",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong14qrp2xvvd7jf2zznhnugnqf4mymhmspmu2mata",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong14ehna3nqs2rkhnqepugxvxawlz59dk3m4ta8hf",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1ln35h9zrr0rhgcpn9sn8z5ne2v36vvg27z64cr",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1d2v3gd0uclr5gqt7s7jetrzf7404nl8w5stm8e",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong15gxcwsgjw9ayanrufnp96kt9zn79py8rq5rflr",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong15gdfy3y8lg8af8d9hheya8xze5gszgsygzxu4d",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1pumf0t7lk9z8sk45q99q6rqnwnvh6w2y8pkrwq",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1nl0fynyqlhex93wtp7djdd3elwvq7zxmht9u08",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong12nd0d7meqfucnky2pxfuy5hs8y3gymjnvxgr5t",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1mm553pgff8qzgzhmr6a3tmqqdkfmdht2kmqjfl",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong18ehvtcjf06k4m6pvdqtxfunh50cqhx4hyg7dg8",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1z03lyngnen7vqrtvlv7l23kl9jr8ww9lr9h9yl",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong17vhslx5tq5pkmkg7wxf2tjwslqam5xjjwxtgeq",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1rwmsh4ktn0e2z0tczwwwxx4ufyrfjs4thvqz6r",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1a2vlxncaesht7f3exj2g8yamfxwzafw772vdx5",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1zkjp25vxp70r6xymv33qlzupkn7raqqeyzeeue",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1wsqz2eauus4j79vzukwkz6edu5rz2cwv0dsgx4",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong10f03t2wtcsddrv2hld760tmdzwsld3537vphew",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1jel4v688c8r9fklj9d8g3j83jqlls5xzczutxm",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1p568rqrfgkqexkrymhxllgw2hsqgan90rdmqa6",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1k74n680qssrp29f35z4e7u6mpxqt3qa3yuv6p7",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong14ajnjlsts8uc40n6ff5pcuqay98vu92henq683",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1wkhmh28ftc8u5tw6spmhymyt54ygpxtxjpv443",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1p7dz2mfu3a5z8ptxk5tkp7s3fupk8h2knle9kp",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1u0qrvrr8fy4ufs3a5mqpxcvukyuzq8n7tgkdrh",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong1vl2fxe5tanndxwfmh7hgm03z26fjfu4h6qfkjg",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "bitsong17hd8y2ctn4dw4zp349hruyx2ac4tzxy4jdd00m",
+        "coins": [
+          {
+            "denom": "ubtsg",
+            "amount": "2000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      }
+    ],
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Forbole",
+                    "identity": "2861F5EE06627224",
+                    "website": "https://forbole.com",
+                    "details": "Award winning PoS validator based in Hong Kong 🇭🇰"
+                  },
+                  "commission": {
+                    "rate": "1.000000000000000000",
+                    "max_rate": "1.000000000000000000",
+                    "max_change_rate": "1.000000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1ttsse04t2n9z4llnmrdjh9lrq45tp829cg6j5g",
+                  "validator_address": "bitsongvaloper1ttsse04t2n9z4llnmrdjh9lrq45tp829evxmy4",
+                  "pubkey": "bitsongvalconspub1zcjduepqkhdkrxulmhhr3q6eunjt8yw5fw3wahuka5cw56cq43hfvpk5xcqq3pkskq",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AtrHs4IBaKyQOry8Mp+gIaEdqeN7SO9mOVywBBYfq0Zv"
+                },
+                "signature": "W25pGx9/3pJcLkinWZgMkZ4v/O821K9JxdT05VShOSFvSwBDTVqSyqu6Vii59PuJvfCza/inTdFl1S6bNpVzkg=="
+              }
+            ],
+            "memo": "1c22051a727b06ac77a91d1d50ccfab7f19ffd66@192.168.135.159:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Validator.Center",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong15gdfy3y8lg8af8d9hheya8xze5gszgsygzxu4d",
+                  "validator_address": "bitsongvaloper15gdfy3y8lg8af8d9hheya8xze5gszgsyfx649s",
+                  "pubkey": "bitsongvalconspub1zcjduepq9q6sxv79hmm6fyx3vupaujveyhwpzuvyf0u3sl3ywfwflrl4kyzqdxc2ha",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A9RFmobJ0Q16z/1lljMEbM0kSIUZU6KrrNKSZke+tDe/"
+                },
+                "signature": "U0yA7cTJWqr+25LrNpw+gx+5aqkE500NetTt5MjS6SxQNvbfk6eFPnoXT+IIbiFGJpZkUMLaypHbA+VQ4x8Nog=="
+              }
+            ],
+            "memo": "0736627312b37d8b1b97ee018a11b2e14bc009dc@95.216.195.127:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "SkyfallData",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1ts3y54cfrdlzfyq5w47amlrx0k4p3qcjea4sz6",
+                  "validator_address": "bitsongvaloper1ts3y54cfrdlzfyq5w47amlrx0k4p3qcjcefej8",
+                  "pubkey": "bitsongvalconspub1zcjduepqsag4zr0kgn5ndhgu0p5dyre9kxe3c02ctwv6qwfc36d2949yesdq9dwtal",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "At+kI6S74sdSnGrw4Gtm8GjbAkyP4BtQsVV9f6wLfVcm"
+                },
+                "signature": "/niW8GUIFj2675Gtz/5x+bWWhxpuaWShgZIYsUBk4GdvIPptn3ucl/Ry28TIkG82E2rfvUe0Q3wckPlJ7xrbiA=="
+              }
+            ],
+            "memo": "0a077d934e0a727ecb18de08ceb5301ecdfa185a@45.77.67.66:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "POS-Bakerz",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong14ehna3nqs2rkhnqepugxvxawlz59dk3m4ta8hf",
+                  "validator_address": "bitsongvaloper14ehna3nqs2rkhnqepugxvxawlz59dk3m50pw85",
+                  "pubkey": "bitsongvalconspub1zcjduepq949nh262qdxtlrz99vva0gcp4lklcxepuczrek9l6erg08jq2n9qp55fvj",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AoYUMRZc5kNJ/e8ZIHPyfwKWOWlH5XYzcmEcx1tgCmbd"
+                },
+                "signature": "ZTQ09PVAavVPDaxJC4JZ6a20PJHvLZvRltOwcxkQUqN+/hRLZpxX7ODMsUcyj0AAzf8oDXLjzWt5QdpqY69pRQ=="
+              }
+            ],
+            "memo": "160551bf09269094ac2094e8170ee673059a3a13@178.62.110.88:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Masternode24.de",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1zcjv0xlpyync2uqp6tp6md9va0ttkqm0ge335f",
+                  "validator_address": "bitsongvaloper1zcjv0xlpyync2uqp6tp6md9va0ttkqm0fadcy5",
+                  "pubkey": "bitsongvalconspub1zcjduepqdahtrfqgqc4dfemyztt9xv85nu2258htjsxz7rnnrgeh6lqj79xqrx5tr4",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AnJGnoueKNdJOlrGmnSRpbMNghUcFiEvi+1bGryGHM+z"
+                },
+                "signature": "GuLmr2YNFoKpmXNVbvJ2hxFX6iqipaLLvw1gMNcW9kQko4ozNgj1cTEas+ofmGWUA5qhCxIZ/BNjpzHNTY+2TQ=="
+              }
+            ],
+            "memo": "190a6206644a3a406a446bd1809c4d8213ab04c4@94.130.25.233:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "papsan",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1ln2820rlqagfjahluwupkd8kjr5hmy72twrsj4",
+                  "validator_address": "bitsongvaloper1ln2820rlqagfjahluwupkd8kjr5hmy7222lezg",
+                  "pubkey": "bitsongvalconspub1zcjduepqrnkq5nal8cs2c7cgvvf3fr32vg7h75wrwvekcm5t03nysy7k8rfq6du73p",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AoeVdkYN5cC1B5a08u0jOFsqKaZ5Ru7ZY0P+6LBhBjOC"
+                },
+                "signature": "Wp0ipZ2xEkEjRc7bJD/Kqvh1ybFA1MwrSPLimoN771d2pOyn7ADmaVOYnkoqd/h5HaihwPK9fu56VKut9NYjRw=="
+              }
+            ],
+            "memo": "21bc592fffef6f34414e158e2b76300dac75bfbc@159.224.141.129:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "WlanWerner",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1kha2mhtxzkkhvhdq8pumra8qv3wn2f8rtcvr3j",
+                  "validator_address": "bitsongvaloper1kha2mhtxzkkhvhdq8pumra8qv3wn2f8r2us2p0",
+                  "pubkey": "bitsongvalconspub1zcjduepqjru5lnxqsdwpm8wtpvh6c8p2fm50gk36kxexcdj2syt0ylazh4kqavtkh2",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AsrDSJHCsrEPdayma6LlQbzU387iylP4HF3qvBpKeMPl"
+                },
+                "signature": "3WDVZHrLXskD2xR64/FRTMl2TRKUV89NBVt960vvNMwOsgalf3I6EmZ1j/r7zg4utmDHh+rPlh5AjGB9R9Iafw=="
+              }
+            ],
+            "memo": "3de05c72d95b9c5d62bd07fb14447c256d478186@88.198.238.168:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "weba.ru",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1x6ehz8z3rxzzmn43w5jp9vn8s46u9s47qmvhr3",
+                  "validator_address": "bitsongvaloper1x6ehz8z3rxzzmn43w5jp9vn8s46u9s47pls7nv",
+                  "pubkey": "bitsongvalconspub1zcjduepq33ewk8wj0m3h56h2np2fyk5yndcxunypraptk7p397yk5kzq77uss0nha7",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Aoj6duNrS0oGhPd0xWrYZWWgdpj5+yXvRA8ISQGZipY9"
+                },
+                "signature": "ZDUbXQNPz7YCncfn0CWH5SRVnI3++w/XyUoD1qWqyrRUv3YouxHj/UOZJjUof8UClSQigOEj2mKTyXuFfKDOWg=="
+              }
+            ],
+            "memo": "3f05ecce72ef886ace40bbacd7480c54a9faa247@178.218.210.131:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "itastakers",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong14qrp2xvvd7jf2zznhnugnqf4mymhmspmu2mata",
+                  "validator_address": "bitsongvaloper14qrp2xvvd7jf2zznhnugnqf4mymhmspmaw85mq",
+                  "pubkey": "bitsongvalconspub1zcjduepqggjq7uppuvp5myn9r769evll2fmcuk8g3dgjfzhu8jegaplmf06qnseczz",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AmtLTwWXgoFAdMxmDA22XOhxIHWsPsl7U6dQqH8yFs8o"
+                },
+                "signature": "eB1uThnZ1QpeBFRmeCu8YEeus32JpZAQNhM374mPCWs8MldpLAx8e06EGbloAs7H+DAP8YSy43rKb2sMtzR/SA=="
+              }
+            ],
+            "memo": "49611cebb1381a66182e417d52cdeed7e370327e@54.93.224.128:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Yarri",
+                    "identity": "",
+                    "website": "https://bitsong.io",
+                    "details": "The best validator and beyond!"
+                  },
+                  "commission": {
+                    "rate": "0.990000000000000000",
+                    "max_rate": "0.990000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1xj8huadca80j0gcg7pe8vxn09jx945d3u7xdkf",
+                  "validator_address": "bitsongvaloper1xj8huadca80j0gcg7pe8vxn09jx945d3a66yx5",
+                  "pubkey": "bitsongvalconspub1zcjduepq8q8ec3qewmt40dyt2l0uzxntcq5fkhjv0qnwv6jpdxscxj80ykcqavujv3",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A+7SWKYldd9nBZWAxyj16SD7OZdjlHkazu+AlXMrgOPU"
+                },
+                "signature": "6plLe7rf9ijG23WAhT4q1i+Or/7TF7swuhAT2yn4OJAMPn4zsexuwZ3mxFc51HB9Ehww+qTiAJtWkbJlgLbldw=="
+              }
+            ],
+            "memo": "4b9bc5ee48e2a9ddc3facb635da77c46393dcea3@185.172.165.6:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Developer",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1z2andwcj36sjsvdkzk4tpumnnaefp7ncxckx4c",
+                  "validator_address": "bitsongvaloper1z2andwcj36sjsvdkzk4tpumnnaefp7nc8u2099",
+                  "pubkey": "bitsongvalconspub1zcjduepq5w5j75ll70qj0qdu99rwhjg8llsejlf6mhl47mmd7wa3223rdazqaplx3c",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8AQpgR4coTFKD0lXpWGrdXlIj91pxZYfcVSMl2rMKyf"
+                },
+                "signature": "7y0aD4G9HpBZAcvJiJlF6ngpp60dqQt6wrUiw211Y9tiVJ9E94ctrdr0BCw5n1tGK/C1GE7yXtOq4bU/wjgMkA=="
+              }
+            ],
+            "memo": "4ce82a3dcd61b958ddee02d24f911fd23fd94e19@159.224.141.128:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Nodeasy.com",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1e450xh6cl2lvdkvd83kw70gv09y2gc2ttlvvj3",
+                  "validator_address": "bitsongvaloper1e450xh6cl2lvdkvd83kw70gv09y2gc2t2ms9zv",
+                  "pubkey": "bitsongvalconspub1zcjduepqclxl36ftp4t0xeh2hsfvc5vd6wepv79dpaaduy6ywyvwqpm8lynsthvalt",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AuzyM65AaSu8TgwQ9OQtu27ZXGnXXC+NhWaWfWKRJfhA"
+                },
+                "signature": "vTdlmczHGNxvlbl1BLDIRUjwuaLiSMtsQHJOqydwTBsDHS/U1/loY6v3CE/fFX8wHsvfaSxUFMdyHMKw5hbhIg=="
+              }
+            ],
+            "memo": "5937c9b17aa11e03cd8abc8de1686a13e4cfa242@195.201.159.252:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "WeStaking",
+                    "identity": "DA9C5AD3E308E426",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "1.000000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong18p62z98hrn6h9qyqem7kxy04l8u7a4yvy0ycny",
+                  "validator_address": "bitsongvaloper18p62z98hrn6h9qyqem7kxy04l8u7a4yv9tc3re",
+                  "pubkey": "bitsongvalconspub1zcjduepq5he79f7kn69eefh6kphsgjltxxkz7fayw4thy2ksnqlwetpexw4q94uk88",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A2gnsh7hvoys6R1H2lHCmxcUo61Wbx/wby3hC2w1MAE5"
+                },
+                "signature": "bde7DwRq3gCQJR1B4EDBjrEnUXYCIyDXknlV0dQUW1gbmy0t4x+aYzfw2jh8hYcOTgDi0ezkfVvVIpGUCdynqQ=="
+              }
+            ],
+            "memo": "5aaea38d847cce32d860f26066bc2cc0c72130a4@0.0.0.0:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "thamar",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1fch860h0xl69fzram623urn2h2afusttf25gaw",
+                  "validator_address": "bitsongvaloper1fch860h0xl69fzram623urn2h2afusttgwgpdn",
+                  "pubkey": "bitsongvalconspub1zcjduepqt8kuxg2mqm4gu0ldre29w6v9p36vwadq857w72ztyda2map97vps3fdf6h",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A/7HQtuaTELCikcqHJc5UEt4MEyWXJ6oFgPfG+DJai2l"
+                },
+                "signature": "tYvrqiHnAolI1uF81lv3yLEXfFCqXVYToQPdH75lKydNYCGxn+9GLF2m2Lng1mjeutyBT6lFCvrCUNB3Yy8O+w=="
+              }
+            ],
+            "memo": "798c8b93a76a156cbf6bb85e53379abf372b7477@10.0.0.4:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Crybex",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1xsp29vcgr2xw089eaujzlsac4jp5erx05q7569",
+                  "validator_address": "bitsongvaloper1xsp29vcgr2xw089eaujzlsac4jp5erx04yza2c",
+                  "pubkey": "bitsongvalconspub1zcjduepqfwt6cp9j5jg4kh5qmzheztwaj9j094ullpws7q446vetfwf5a9mqvaka8t",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AjCN4P8cHc1BAE85m/IIBEw+hLQ/FA7xpy5QkOcX5JTV"
+                },
+                "signature": "rZrN/m2v1A8KWukw3qw6mkkYcaX1O7n8UKHTDDpLL9RjxU+IAcjVZKXAaZiuV/nSjQ7jPj1Dkx6zmyDkpot9aQ=="
+              }
+            ],
+            "memo": "7afe3025333e3ff98c2d07b714cac0454a8d4506@199.247.22.11:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "ChainodeTech",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1fx560687h07g8duae5c4m9qmyrdrcy63jfj4yp",
+                  "validator_address": "bitsongvaloper1fx560687h07g8duae5c4m9qmyrdrcy63ndwu5u",
+                  "pubkey": "bitsongvalconspub1zcjduepqpkzrsvdratz9cejlhts868e0mpsxn8wqwpc7u0y5sxg3kxujznrqam9we3",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A6qNgbNuQcnBQN5p46cGToqRFjSU3zX0KrnMu7a+gD7N"
+                },
+                "signature": "qlU6txXL/Aqy40ZQGVAK1zZ5yzjwgkr7MybvHsZN06sYJSqliZhdZM0rrT2NyMZMV1TAnmNbatjVerc26cKbUg=="
+              }
+            ],
+            "memo": "7b424b6e1b52696840fa39da9c82bf73cebcc13a@144.91.125.178:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "SmartStake",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong15ts765x8sjrff7rvv8zrh223usg2fw7rwnjp4g",
+                  "validator_address": "bitsongvaloper15ts765x8sjrff7rvv8zrh223usg2fw7r0hwg94",
+                  "pubkey": "bitsongvalconspub1zcjduepqwruq2vkpyvmn0zwsv73s0s69r52wn7pjnq9ncm95290kdwr05n4ql478m3",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A/fXu/jVV+wUOvRGBenVYmaw2PjxmKHK5BDWDGT5hwmb"
+                },
+                "signature": "pA9avGAM5SaRrcR7MHRaeh4X227GvB9RrCxM3uWponkdn3i3tkhGfv6x2OpLAbvFn34QJwWE0EU4RcPOPml/AA=="
+              }
+            ],
+            "memo": "7f6e302bdd3496803e2d0232042dee7e38f5d4a9@192.168.0.14:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "VGK",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1ln35h9zrr0rhgcpn9sn8z5ne2v36vvg27z64cr",
+                  "validator_address": "bitsongvaloper1ln35h9zrr0rhgcpn9sn8z5ne2v36vvg2lxxug7",
+                  "pubkey": "bitsongvalconspub1zcjduepqfldg75h8y92uzkr67lxt5yfw940s3s0dv44d2umxgzff3kmywyksy2ma9f",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A84Aw8ewAtoX+9PuIat7plGBuu8fGY8a/sUm7uRkC06i"
+                },
+                "signature": "bwThbO9ybA64HMQMi1ELDfqY/LUtemBvkqgylTwcqo1DgMNxQHFqKiwQzH7QLBUYFTEFAlqk5cPj5vKb83EUlQ=="
+              }
+            ],
+            "memo": "881034e0836a7bf637a517feafa74554728c954d@176.37.214.146:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "nekit",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong15gxcwsgjw9ayanrufnp96kt9zn79py8rq5rflr",
+                  "validator_address": "bitsongvaloper15gxcwsgjw9ayanrufnp96kt9zn79py8rpslq07",
+                  "pubkey": "bitsongvalconspub1zcjduepq2hlxgu2rzjzezpqt5x6aldwn9ehtnjfjg4p6l77utarge0rat20s2tfnz4",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AjdzNvBTKV5NunXB+wiGjK5ngDvF5FR5DjFNUNyqHrUf"
+                },
+                "signature": "khOVfDvA3ZsINlZlXseSg34XFesD5WpmqGntk+IXaP5B9dECuzGWe/4MIYQfdrBxIYyQK+HltejOO+Dkw3QQfQ=="
+              }
+            ],
+            "memo": "8960516d87c38a2c46e5628d23a9f0d85193ab51@159.224.141.128:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Alibaba",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.700000000000000000",
+                    "max_rate": "0.900000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong10n5aetzxsccds9srnnxj9k3w6prr0ks09nsxm2",
+                  "validator_address": "bitsongvaloper10n5aetzxsccds9srnnxj9k3w6prr0ks0yhv0th",
+                  "pubkey": "bitsongvalconspub1zcjduepqvkwmsdln5w6cavfcmu9w2aspy92tqvmj4egvf3tw7n8298lnuj3s3pl628",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A/02izR/ATsy23x63vhbrqWeJKJ1k7TNFAI7hcxIJkow"
+                },
+                "signature": "4cwxfrsvjynIGnG357XCmbaXc1PNYEQ5UFjHfeA0SdQfn9kU/HiJb3rwktuGOMPyhN1BuzXlFXoew0DQDaWzJg=="
+              }
+            ],
+            "memo": "8b9de389bb7c282b2c684fbbbc02859347ffb74f@109.251.8.131:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "alexandruast",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1pdfr7xuckj6lhdphdde6peres9ufwgpsxge8yc",
+                  "validator_address": "bitsongvaloper1pdfr7xuckj6lhdphdde6peres9ufwgps8v9w59",
+                  "pubkey": "bitsongvalconspub1zcjduepqwaxtsaplghlvxq6mgzhx8cl6wsl0wtkexq503qh2ggmx5qfdcqkqhdux9c",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Atjy/iv6uIiE969pJ7jzY4ZmIl6GRQcDkp7ztjS3lt59"
+                },
+                "signature": "MkanmzVhotXsXPZu0/eXYi31PY7rkxRIq//RUTFZw54TYNNjP9ZpD2p+Z7yeUOXROJ6uAq1ZfU3QjGS7fjENUA=="
+              }
+            ],
+            "memo": "8d25672b01e304b6ce765bfaf8f984cad3ce16cf@173.212.228.247:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "cyberponics",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1d2v3gd0uclr5gqt7s7jetrzf7404nl8w5stm8e",
+                  "validator_address": "bitsongvaloper1d2v3gd0uclr5gqt7s7jetrzf7404nl8w45hjhy",
+                  "pubkey": "bitsongvalconspub1zcjduepq4gj6szufecy3v38uzvqslk3lnj5uxg697cf7ttmxj3zxa427k7msrrwksx",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A1dqS4/Z0HX+YXliyx1SCyzGrAHQjyflKqou8UpEWYq3"
+                },
+                "signature": "VQQi7/TkzQ/5g2wbk/J6ovaVaxDqlaJ4WD5JhE31n2VW6rqkKcjdBUNVEwqc2pGnWhOFcqvPOxdmc/R5gIjN0Q=="
+              }
+            ],
+            "memo": "941171ef8abe383a3221b4de2feab56e1f733ff9@176.105.35.39:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Wanderer",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.900000000000000000",
+                    "max_rate": "0.990000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1749vlu8plkj6q6x0a95le6n76levhy0ys6hxv9",
+                  "validator_address": "bitsongvaloper1749vlu8plkj6q6x0a95le6n76levhy0y37t0uc",
+                  "pubkey": "bitsongvalconspub1zcjduepqnmvcv6rjj558w4yx9mjrdfh9u27w59wdnxh0egz89hrp0ytkh9gqdac6up",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "ApKSNrstbI+d7LOPuY4qnOFohe25hMVqQFt/0BV5V2sB"
+                },
+                "signature": "NSeQBOZvySk3IcnICh7AldaOPIFnbLCGhhromCck2wQJyJK4AmZvBSIgtrPsUxzE8ym9gnl3XMV6xekLh03aUA=="
+              }
+            ],
+            "memo": "9a125b48d83681aa54282ead79efe1cf4b6d7371@185.172.165.10:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Rundax",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1kpde9jgfusckguqkdlvynjzden6r00u70vmu8e",
+                  "validator_address": "bitsongvaloper1kpde9jgfusckguqkdlvynjzden6r00u7wg84hy",
+                  "pubkey": "bitsongvalconspub1zcjduepqzaz28n5r3ff28ulth30mquh475ll985frpz39s0w6z8k9qvh0weq4dzkhu",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A5OCLy1DqDaF+XlC55BUzRhgMSZceTLgeirOY1rputtf"
+                },
+                "signature": "9z8fK7XqOHkrG84djA7L2V2BHZPbEBnhBbKi+q5xlaUsnaDPkevBQYNH30HZXwLpeESzWsLL/Ipt9FHN6j0/Sw=="
+              }
+            ],
+            "memo": "9a813983054a4591ade1e0a0c136cc8c672dfc8d@148.251.153.108:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Simply Staking",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1pumf0t7lk9z8sk45q99q6rqnwnvh6w2y8pkrwq",
+                  "validator_address": "bitsongvaloper1pumf0t7lk9z8sk45q99q6rqnwnvh6w2yx9227a",
+                  "pubkey": "bitsongvalconspub1zcjduepq46pjsd74kenz02c9vmqaknxv009lxghvgzsa0kn5pq2v9pjtvzaq6wav67",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AzxqD1/YJZpM1wa9Rb4Jf0PN027S2aKQMmoQf1CtOPjL"
+                },
+                "signature": "KO0WuL5anWbOHQlrsQ5SfKmNgi+s/b49auWr66RM3NIRC7gKT8ckcfbP7VCwC2djXQ1GXjv8OuQF+7MJpR6aQw=="
+              }
+            ],
+            "memo": "a8ab04e9b7db2c687d42d1f6f229b08eed476ede@172.16.151.40:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Alive29",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1nl0fynyqlhex93wtp7djdd3elwvq7zxmht9u08",
+                  "validator_address": "bitsongvaloper1nl0fynyqlhex93wtp7djdd3elwvq7zxmk0e4l6",
+                  "pubkey": "bitsongvalconspub1zcjduepqwzpqq8r953u63pycxpmz9c56aeefcg2n27c0muyq03davqmd6ges2kmds6",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AoM1HdlFRI+n/0wbcfPjEw9ifwpUswVklXdSokoc0Cl0"
+                },
+                "signature": "fV4lMAVpVHS6MGmj6W1XvOsHngecj+FbHV3Vrqw1yYl8ICyb1N1PyQhTizSwqrhv7frd2I78GH49BsoyI9+7BQ=="
+              }
+            ],
+            "memo": "a8ba439280e391f46a88bdd42b971e39acde8e8e@45.138.174.69:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "kytzu",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong12nd0d7meqfucnky2pxfuy5hs8y3gymjnvxgr5t",
+                  "validator_address": "bitsongvaloper12nd0d7meqfucnky2pxfuy5hs8y3gymjndz52yk",
+                  "pubkey": "bitsongvalconspub1zcjduepqngn6r04n9rtzs7elgqvvw3sd9juxsnv6zfdcy6ee22lrhynw8shqzez797",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AlMNjCMGkBa6WPRPg92mDks+FskfNVGRWFPvEzI+Dz2L"
+                },
+                "signature": "Yr+TU/uLq5/IuNJTw4EVY20L/z7UjYpGiwbKcOzPmZpo5LRzX8SeQ7x5l1HMwtikWq05vchK9GQo1U9RJMgWBQ=="
+              }
+            ],
+            "memo": "b57e2b3776cd75308430459a4ecceb5a97f00140@5.189.166.185:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Easy 2 Stake",
+                    "identity": "2C877AC873132C91",
+                    "website": "www.easy2stake.com",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1mm553pgff8qzgzhmr6a3tmqqdkfmdht2kmqjfl",
+                  "validator_address": "bitsongvaloper1mm553pgff8qzgzhmr6a3tmqqdkfmdht2hlumez",
+                  "pubkey": "bitsongvalconspub1zcjduepq6nsntstplu02axaa2g452cc9drpcmnfenkj2pfdq653s9yagw35q0ce4ak",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8E+8Xa/hXh1lBPYkUgs+2mhyT7J+/7k5ue/cgpcZjwZ"
+                },
+                "signature": "mvZ1VzKxpw1s1uh3j6c5yNxD56fwIoxqE+B+CTtX47QBnQWiQ1tSMgLEsGmiI9CK/EImv9EbVkMOwGqXrzVPIg=="
+              }
+            ],
+            "memo": "ba9104685d4f3c45be996b67a50a445d59f6e97d@164.68.108.173:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "nakashu",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong18ehvtcjf06k4m6pvdqtxfunh50cqhx4hyg7dg8",
+                  "validator_address": "bitsongvaloper18ehvtcjf06k4m6pvdqtxfunh50cqhx4h9vzyc6",
+                  "pubkey": "bitsongvalconspub1zcjduepqzskh0gqajn3qtqkgrrgdpvct7qt58w5w46qfhrq7nt8xy9zpejyqjnemt3",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A2B3vQudTjDkgJ2f0w+nIF8kqSRDH7I4Nw4j0DpcfE02"
+                },
+                "signature": "crRSnwwR5II77aYYJPPmQ2pzgnkyFwfyUIqX2nhm9qoHQdtudpTUdeMtddID03Vpolza6tlebM1hmgSy5oArCQ=="
+              }
+            ],
+            "memo": "bd1845b4cd81cc198bb5ff4e46c76827a03d5ab0@95.216.73.158:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "pr",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1z03lyngnen7vqrtvlv7l23kl9jr8ww9lr9h9yl",
+                  "validator_address": "bitsongvaloper1z03lyngnen7vqrtvlv7l23kl9jr8ww9lzptv5z",
+                  "pubkey": "bitsongvalconspub1zcjduepq33dg40dhujjntc8y373fdsmurdgknq7y4427pkmj8pjr5ee70nssq86eat",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A2SfCqm4S6tUMBMi0VUhlLctvnVloIIWjRJ7doy17szs"
+                },
+                "signature": "Pv9hLAiPn9rIB7kiU03UN60eFxFtoCwFi5zSBrkPNtpZvWZO8gFIwFJqh/WeO9agNyTQD7JbiLDCQtF+vjcqkQ=="
+              }
+            ],
+            "memo": "bec7653aaace3289e0ed06930a529c3bd71e90ee@69.197.128.74:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "andr",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong17vhslx5tq5pkmkg7wxf2tjwslqam5xjjwxtgeq",
+                  "validator_address": "bitsongvaloper17vhslx5tq5pkmkg7wxf2tjwslqam5xjj0zhpfa",
+                  "pubkey": "bitsongvalconspub1zcjduepqz2ahtl077s8nx8nqt8a45tk7k84qatmlwfpd3yemmc7y8ahm8dwsqt234d",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A4FQ74uu+XSoDuHdjVNsCLxw25tCHunFJyj4Msn2u4T7"
+                },
+                "signature": "XXzP1LuVlTIFcSGnkX6JLToLVGmACoIBnEFbjV5DcOcGwTmZxyus1lgMeCBOe9Ucv2BufQiEierm6xba+ENcTg=="
+              }
+            ],
+            "memo": "c267f0eb0ba0dd4c17d6c3827564af43690755c2@176.105.33.160:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "bitcat",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1a2vlxncaesht7f3exj2g8yamfxwzafw772vdx5",
+                  "validator_address": "bitsongvaloper1a2vlxncaesht7f3exj2g8yamfxwzafw7lwsykf",
+                  "pubkey": "bitsongvalconspub1zcjduepqrx33hvsa6yvcakgycx3wzsy5mhvqlrt5fj94zlc0tr6jpwtrcxgqnmxjqh",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AxQaoQzbqG3NYyXr6K16cKQ3EUAFNWypmiMJ5texHI7s"
+                },
+                "signature": "g3k3LuaVuWPwLcq+2ew+AYa+6ohHADTBbnzQZCCiS2NX42K2PPILHcONHk39nF+YPwg02HOFmaw5RV6bp69lCw=="
+              }
+            ],
+            "memo": "d011987ad9efbb90e52f2e2b4c36f2581c06bf2f@167.71.34.212:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "bitangel",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong14dtkqvr604k3vw3c37ldn8pa9elfeatkuulmm3",
+                  "validator_address": "bitsongvaloper14dtkqvr604k3vw3c37ldn8pa9elfeatkacrjtv",
+                  "pubkey": "bitsongvalconspub1zcjduepqrh6m06whqltae34jazwttd8zn7rx38adnvrg4enx3qhm8ldlcmssm3uemq",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AimkQbGSxCwhY4O64xbIYcn46RzZhvHMpgXl43/Y6weo"
+                },
+                "signature": "9aeEpymxrhl1Ogjpw2qGeMI4s4HBDYN0z/ZG9Z2BcLJdQ/FZuAME7QjVbWTrxRvJls+nK6Qzy78BJx9rkr9YsQ=="
+              }
+            ],
+            "memo": "d1ed90b4e269e66fd1e16ed5319590025be7a31a@88.99.143.175:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "GRom81",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1rwmsh4ktn0e2z0tczwwwxx4ufyrfjs4thvqz6r",
+                  "validator_address": "bitsongvaloper1rwmsh4ktn0e2z0tczwwwxx4ufyrfjs4tkgut27",
+                  "pubkey": "bitsongvalconspub1zcjduepqgs4e43uetfmxxy8e7lhglt006cn3tq342f4phasrvu5lup0h2e6qwdag5u",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8z+ZHWYQLpedM+0WoEDVXApdE2hAUlTzvTN6Eoce+K6"
+                },
+                "signature": "kIG2bWUHd+wMKMQpWkHTIoDFEU9gH88uNuXeyB/kJ5J2aocvCJbBQsfBOLe45VizvKOHGOogYMg702XkBeimwA=="
+              }
+            ],
+            "memo": "d580bb73c2f4b5cff1f44380b914551c310269d0@178.63.42.243:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "bi23",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1zkjp25vxp70r6xymv33qlzupkn7raqqeyzeeue",
+                  "validator_address": "bitsongvaloper1zkjp25vxp70r6xymv33qlzupkn7raqqe9x9svy",
+                  "pubkey": "bitsongvalconspub1zcjduepq30k6nm0mem9ah902gt8ugmyamlfvd9q4s9czvpyycmk0lpnkkzfs0c5qmt",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AoqdSV8V6bi/SslMVx3guzf5hJM5QBeGzpK6IgGVcn3Q"
+                },
+                "signature": "I5L6RNCVovoBNPE1gsKl6/E/DsAvkH6w6qZf7r6rchBWect/1G2JiyB71J8KNl2d/WAW44iSP3CtNzOEd8+hGg=="
+              }
+            ],
+            "memo": "e0ec2afa0ca85c387cc5fe879edb0445a050770c@198.181.44.49:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "novy",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1wsqz2eauus4j79vzukwkz6edu5rz2cwv0dsgx4",
+                  "validator_address": "bitsongvaloper1wsqz2eauus4j79vzukwkz6edu5rz2cwvwfvpkg",
+                  "pubkey": "bitsongvalconspub1zcjduepq9fldgun8cqk8pna0u3lruhx5ewmupvaexq654wuuakvevvakr3mqmymc4s",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Ajx2UcXTszcGJn+eMkDLsRymv9jJKmv7HDvw9nH5HQKB"
+                },
+                "signature": "/kR+3gBdbJ/7+zCPX/O9aFJLM8zuovYLvJKnvxyvq3liT07K+yVC5eEXmY7vhC6hAUNmAoQRdF+q2HyTC5qETQ=="
+              }
+            ],
+            "memo": "ebec86c3283263d5cd5c4944eee2645b3e5649e1@45.239.19.7:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Cyberili",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong10f03t2wtcsddrv2hld760tmdzwsld3537vphew",
+                  "validator_address": "bitsongvaloper10f03t2wtcsddrv2hld760tmdzwsld353lga7fn",
+                  "pubkey": "bitsongvalconspub1zcjduepqc7k8tmcrp6yklskc6u9agx4y3lz3pmfelhm23r2rwugamdna27sspjyem6",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AvXScGshZM57p1upjCslW0p0K8RHwwS6VoYPEc1x1Z1P"
+                },
+                "signature": "k1sVwKgvOGK6dbnqrBoCbIOOelcLb5uYhJyKQSI/FWt4PyBtWrUhvpLr4FzfP0qkIkL640N+qsbssoDevKcxjA=="
+              }
+            ],
+            "memo": "ef27432e2a49d132fec872b77b84fb5e079578ee@144.91.109.197:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "opt52",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1jel4v688c8r9fklj9d8g3j83jqlls5xzczutxm",
+                  "validator_address": "bitsongvaloper1jel4v688c8r9fklj9d8g3j83jqlls5xzexqzkx",
+                  "pubkey": "bitsongvalconspub1zcjduepqs0jyzfja4td3373mur93mmp6haen54cgfc5wl5zg7gfcv284hhys6dfqew",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A2NDNiyxKspvh2B6vLCZwcMwAKHoijxYAyf27W231NjC"
+                },
+                "signature": "khJhlQa4gj6+77QgWd8tPANdOLxb/83m+w/hucZk5ehLZEVgxh5C5O2Swe5GI+cMmMmPWdsdZB4B+hv58VwMgg=="
+              }
+            ],
+            "memo": "f4378580fdf2fa03c45bbbe23fa7976447a811b6@78.47.93.182:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "ANAMIX",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1p568rqrfgkqexkrymhxllgw2hsqgan90rdmqa6",
+                  "validator_address": "bitsongvaloper1p568rqrfgkqexkrymhxllgw2hsqgan90zf8fd8",
+                  "pubkey": "bitsongvalconspub1zcjduepq9yl3mwdcq6380rczm7gsexhfknzy2krkwnhvcflj6t607zntye0sk7l8gz",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "At5Qh3Q4J9qFdkkXkawaz8iKU1BgJ7/qa0j4kYWG92Cb"
+                },
+                "signature": "ba+xEU8fxv9Fv+hW5ASkWvbQokv+uBWgCZB3MPkKJMd57WyweLJLhnUklXVcEWoCLEGo9e7QrvgwJ5H96PgJfQ=="
+              }
+            ],
+            "memo": "fd8e23a23a21ac2afd1c57054bfb9d8307b45f16@176.223.143.37:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "blonde-code",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1k74n680qssrp29f35z4e7u6mpxqt3qa3yuv6p7",
+                  "validator_address": "bitsongvaloper1k74n680qssrp29f35z4e7u6mpxqt3qa39csn3r",
+                  "pubkey": "bitsongvalconspub1zcjduepq9754t054egss7r9gxc9ecc7v6uk6ky5d9wqp2w85ux0e05x0smysv29hm0",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A5Ryd0Ifj/WrQkByWV473xsWnfQVY9UsVafrp+pKRNoN"
+                },
+                "signature": "yyqkzM/5Oboi8CxRz4NGS22kSG23HFd/aZxbc0wwfJgDyGvy+/ZDBRs6VHBfkHgYzgtUxwUH371MTAgOOPCqqQ=="
+              }
+            ],
+            "memo": "fd974c172b9f999e9bbf697619b098e705a04b08@95.216.168.57:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "retz80",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong14ajnjlsts8uc40n6ff5pcuqay98vu92henq683",
+                  "validator_address": "bitsongvaloper14ajnjlsts8uc40n6ff5pcuqay98vu92hchunhv",
+                  "pubkey": "bitsongvalconspub1zcjduepqttgxm0ar0r04r9fxy0r2a6xwnms434lsghmrnx5k7j07r3s44acqfmw732",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "Akok58ZSJRBbKhvcoQ/epQBYHsk6YMUnGXlqrVkkLBKe"
+                },
+                "signature": "FbQMQaeojJgxJhZja0QG47Kext5F5doxtA6jivI2Mb0jQJy8jS+7ahkUkeD/PnaZFVAjXYSOZ8hW4U69cuaPJw=="
+              }
+            ],
+            "memo": "fe27853719b7d48d2275efe343f170bd2b2c5746@149.28.82.214:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "Inotel",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1wkhmh28ftc8u5tw6spmhymyt54ygpxtxjpv443",
+                  "validator_address": "bitsongvaloper1wkhmh28ftc8u5tw6spmhymyt54ygpxtxn9su9v",
+                  "pubkey": "bitsongvalconspub1zcjduepqvtsnew09svk6h5fprxzgyq6q95gtpemmgur50klze5xwe8z0c2pset8pm4",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AriHZ8YXizcy5X5wq1Uajt3N8wQXPCN22d6vC3ZjtuRs"
+                },
+                "signature": "CfSinATToESdgneHU+sEGvBCbnR77+D4BvK1f/eP101VsVIOpEaEejEcOSGul94DWmAXLUoeFSaEVbooski2Sg=="
+              }
+            ],
+            "memo": "150ff3538ac32bafe22463aba4635746391b904a@128.0.51.145:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "melea",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1p7dz2mfu3a5z8ptxk5tkp7s3fupk8h2knle9kp",
+                  "validator_address": "bitsongvaloper1p7dz2mfu3a5z8ptxk5tkp7s3fupk8h2kjm9vxu",
+                  "pubkey": "bitsongvalconspub1zcjduepqv8aufy6xp86aqe66zt3snt566m2k4r79ac6tzl9saqq5utm6zhwqkhumpc",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AjwZ2GzQ/XbpLRisl6+8+VHjZhHqsoWpfwNsIxs9F+yf"
+                },
+                "signature": "FVdmqZEIThvKEhBrFNz7Tpp4rHG8u8xE6Zn/4E5wjMptvgXvqYe93Z8pfb7incrz9t22jO9pUtAA13b6eMN5fQ=="
+              }
+            ],
+            "memo": "df9e8a167c70013cc9e1a38003b48f9a1c8ddb06@10.0.0.3:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "stakewolf",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1u0qrvrr8fy4ufs3a5mqpxcvukyuzq8n7tgkdrh",
+                  "validator_address": "bitsongvaloper1u0qrvrr8fy4ufs3a5mqpxcvukyuzq8n72v2yn2",
+                  "pubkey": "bitsongvalconspub1zcjduepqqqgd34ayl6ffexs7q6zz3uqr5v8yqg2vu0f64khcg4ku92duxylqp3adng",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AunsPPiaMoGxl+TWiREeUnixvl0NBzLIOB2wR4FWjn+R"
+                },
+                "signature": "LBZd07zcTd1UcV1Q/722urxo5QRURk98TRicj/V3upIYS2z0I7fAKcRgWcHGhDEc70AiGEA3kmk/fdCIyOH1ZQ=="
+              }
+            ],
+            "memo": "7db9ee15e28809b01724cc1a9b6985473a567f11@51.38.237.243:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "syncnode",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong1vl2fxe5tanndxwfmh7hgm03z26fjfu4h6qfkjg",
+                  "validator_address": "bitsongvaloper1vl2fxe5tanndxwfmh7hgm03z26fjfu4hmy4lz4",
+                  "pubkey": "bitsongvalconspub1zcjduepqpuvvllt3q8qwq32dn4yqv35gmcqyc50wff5qr38qv3504532hqcs24ku4k",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "A8tMKycXtngLPAeNCsDFHlCg7/olqsHlcr+p1Y7RQdXU"
+                },
+                "signature": "qIzY9hsE/xSSoLJGkpsb0wZhchgAexz5WH+aJPq/bisLuWXq/PXxekqbAwyqN6yegAG7vGYfEw4VolZ1DEEQZA=="
+              }
+            ],
+            "memo": "2c9e1127028df0850c34ee885e3f709728103bac@167.86.70.194:26656"
+          }
+        },
+        {
+          "type": "cosmos-sdk/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "cosmos-sdk/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "UbikCapital",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "bitsong17hd8y2ctn4dw4zp349hruyx2ac4tzxy4jdd00m",
+                  "validator_address": "bitsongvaloper17hd8y2ctn4dw4zp349hruyx2ac4tzxy4nf3xlx",
+                  "pubkey": "bitsongvalconspub1zcjduepq9nws8vzw4e54wxyhg9qph42h5y8l6k7j7pjg3ecthdc32scj96gse7ahdx",
+                  "value": {
+                    "denom": "ubtsg",
+                    "amount": "1000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AmO5ug0BpPLjIrQ1Z7msUzHY1ZxEEgUeAbNByoWa6gm+"
+                },
+                "signature": "txNshCd7GNfUfRRYhDqOKKNK4xJNYOpxiBkV187M5QIWkoSm73zd0T+O1gTjGFCymnh5b1zwqU7ZmfPpUuT+VQ=="
+              }
+            ],
+            "memo": "0925187b63f6ddf6e456fb284134124e5e357e4b@144.91.86.122:26656"
+          }
+        }
+      ]
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "track": {
+      "starting_track_id": "1",
+      "tracks": null,
+      "deposits": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "ubtsg",
+            "amount": "100000000"
+          }
+        ],
+        "max_deposit_period": "259200000000000"
+      }
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "ubtsg",
+        "amount": "133333000000"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "432000000000000",
+        "max_validators": 48,
+        "max_entries": 7,
+        "bond_denom": "ubtsg"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    }
+  }
+}
