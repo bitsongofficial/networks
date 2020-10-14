@@ -92,6 +92,8 @@ After the network has reached the quorum, the testnet will start automatically!
 ```
 6190e5e52eea8e676c5c4e8f9c7830afcc4ffbf9@37.120.178.44:26656
 65fb280c387a55e36b4a2cea774bb3e4f6a10081@172.104.136.83:26656
+5f13d0373781effbf87608be9da8021f755fc03e@35.192.159.190:26656
+6de901ea0a01450939ac960019ad77bc04ccc228@176.37.214.146:26656
 ```
 
 ## Persistent Peers
