@@ -89,7 +89,9 @@ After the network has reached the quorum, the testnet will start automatically!
 
 ## Public Seeds
 
-[TODO]
+```
+6190e5e52eea8e676c5c4e8f9c7830afcc4ffbf9@37.120.178.44:26656
+```
 
 ## Persistent Peers
 
