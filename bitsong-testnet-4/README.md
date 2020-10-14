@@ -1,9 +1,188 @@
 # bitsong-testnet-4
 
+```
+$ shasum -a 256 genesis.json
+d67e36a3d874045cef6739984f3c35e5116b67e7be0f2f5c738430138fbb6c38  genesis.json
+```
+
 ## Setup instructions
+
+[TODO]
 
 ## Public Seeds
 
+[TODO]
+
 ## Persistent Peers
 
+[TODO]
+
 ## Blockexplorer
+
+[TODO]
+
+## Changelog
+
+```
+- Remove Module Track (alpha)
+- Remove Module Reward (alpha)
+- Cosmos-SDK v0.39.1
+- Tendermint v0.33.7
+- Initial supply 116,289,228 btsg
+- Max validators capped to 100
+```
+
+## General configurations
+
+[Genesis start at 20201016T15](https://www.timeanddate.com/countdown/launch?iso=20201016T15&p0=1440&msg=bitsong-testnet-4&font=slab&csz=1)
+
+```
+  "genesis_time": "2020-10-16T15:00:00Z",
+  "chain_id": "bitsong-testnet-4",
+```
+
+## Consensus params
+
+```
+  "consensus_params": {
+    "block": {
+      "max_bytes": "200000",
+      "max_gas": "2000000",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000"
+    },
+    "validator": {
+      "pub_key_types": ["ed25519"]
+    }
+  },
+```
+
+## Bank params
+
+```
+    "bank": {
+      "send_enabled": true
+    },
+```
+
+## Crisis params
+
+```
+    "crisis": {
+      "constant_fee": {
+        "denom": "ubtsg",
+        "amount": "133333000000"
+      }
+    },
+```
+
+## Distribution params
+
+```
+    "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000", // 2%
+        "base_proposer_reward": "0.010000000000000000", // 1%
+        "bonus_proposer_reward": "0.040000000000000000", // 4%
+        "withdraw_addr_enabled": true
+      },
+      "fee_pool": {
+        "community_pool": []
+      },
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+```
+
+## Mint params
+
+```
+    "mint": {
+      "minter": {
+        "inflation": "0",
+        "annual_provisions": "0"
+      },
+      "params": {
+        "mint_denom": "ubtsg",
+        "inflation_rate_change": "0.130000000000000000", // 13%
+        "inflation_max": "0.200000000000000000", // 20%
+        "inflation_min": "0.070000000000000000", // 7%
+        "goal_bonded": "0.670000000000000000", // 67%
+        "blocks_per_year": "5733820"
+      }
+    },
+```
+
+## Gov params
+
+```
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "ubtsg",
+            "amount": "512000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000" // 2 days
+      },
+      "voting_params": {
+        "voting_period": "172800000000000" // 2 days
+      },
+      "tally_params": {
+        "quorum": "0.400000000000000000", // 40%
+        "threshold": "0.500000000000000000", // 50%
+        "veto": "0.334000000000000000" // 33.4%
+      }
+    },
+```
+
+## Staking params
+
+```
+    "staking": {
+      "params": {
+        "unbonding_time": "432000000000000", // 5 days
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "ubtsg"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+```
+
+## Slashing params
+
+```
+    "slashing": {
+      "params": {
+        "signed_blocks_window": "1000", // ~83min @ 5.00s block time
+        "min_signed_per_window": "0.050000000000000000", // can be down for up 78.85min without slashing
+        "downtime_jail_duration": "600000000000", // 10min
+        "slash_fraction_double_sign": "0.050000000000000000", // 5%
+        "slash_fraction_downtime": "0.010000000000000000" // 1%
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+```
