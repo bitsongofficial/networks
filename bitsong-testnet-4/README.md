@@ -2,12 +2,90 @@
 
 ```
 $ shasum -a 256 genesis.json
-d67e36a3d874045cef6739984f3c35e5116b67e7be0f2f5c738430138fbb6c38  genesis.json
+e41be4d3de2ac1966bd4247d19229f64b1b0bd35fdefcae5316d1c36662b716e  genesis.json
 ```
 
 ## Setup instructions
 
-[TODO]
+### Make sure your node is updated
+
+```
+rm -rf ~/go-bitsong
+git clone https://github.com/bitsongofficial/go-bitsong
+cd go-bitsong
+git checkout v0.6.0-beta1
+make install
+bitsongd version --long
+```
+
+you should have an output similar to this
+
+```
+$ bitsongd version --long
+name: go-bitsong
+server_name: bitsongd
+client_name: bitsongcli
+version: 0.6.0-beta1
+commit: ed1332e344a28984e5bce8e4b87ea6597aa6384c
+build_tags: netgo,ledger
+go: go version go1.13.6 linux/amd64
+```
+
+### 1. Delete the old genesis
+
+```
+rm -f ~/.bitsongd/config/genesis.json
+```
+
+### 2. Download the new genesis, and copy it to the correct directory
+
+```
+wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-4/genesis.json -P ~/.bitsongd/config
+```
+
+### 3. Run the node
+
+```
+bitsongd start
+```
+
+Optional, if you wish, you can create a systemd file (edit <your_user> where necessary)
+
+```
+sudo tee /etc/systemd/system/bitsongd.service > /dev/null <<EOF
+[Unit]
+Description=BitSong Network Daemon
+After=network-online.target
+
+[Service]
+User=<your_user>
+ExecStart=/home/<your_user>/go/bin/bitsongd start
+Restart=always
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+```
+sudo systemctl enable bitsongd
+sudo systemctl start bitsongd
+```
+
+_To check the status of the node, you can use the following commands_
+
+```
+bitsongcli status
+sudo journalctl -u bitsongd -f
+```
+
+Now we have to wait for the launch of the network which will take place on [October 16th, 2020 at 15:00 UTC](https://www.timeanddate.com/countdown/launch?iso=20201016T15&p0=1440&msg=bitsong-testnet-4&font=slab&csz=1)
+
+After the network has reached the quorum, the testnet will start automatically!
+
+**If the quorum is not reached, we will give further communications in the validator’s chat**
 
 ## Public Seeds
 
