@@ -94,6 +94,18 @@ After the network has reached the quorum, the testnet will start automatically!
 8011a60a2155599021886ffdb3524e00f687f2ba@78.47.132.180:26657
 ```
 
+## Faucet
+
+**PLEASE DO NOT ABUSE**
+
+```
+Mnemonic
+system brother slender senior together cube nasty truth obtain half humor cost accident match wild also exotic file buffalo program antenna run bacon control
+
+Address
+bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
+```
+
 ## Blockexplorer
 
 [BitSong Lite Explorer](https://testnet2.explorebitsong.com)
