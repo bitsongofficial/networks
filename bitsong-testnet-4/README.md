@@ -11,6 +11,9 @@ https://bitsong.stakesystems.io
 https://lcd.testnet4.bitsong.network
 ```
 
+## Console
+- [BitSong Console](https://console.bitsong.network)
+
 ## Setup instructions
 
 ### Make sure your node is updated
