@@ -5,6 +5,12 @@ $ shasum -a 256 genesis.json
 e41be4d3de2ac1966bd4247d19229f64b1b0bd35fdefcae5316d1c36662b716e  genesis.json
 ```
 
+## Public lcd availables
+```
+https://bitsong.stakesystems.io
+https://lcd.testnet4.bitsong.network
+```
+
 ## Setup instructions
 
 ### Make sure your node is updated
