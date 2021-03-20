@@ -43,6 +43,7 @@ else
     #./build/$DAEMON add-genesis-account $GENACC 1000000000$DENOM --home $DAEMON_HOME
 
     echo "12345678" | ./build/$DAEMON gentx --name $RANDOM_KEY --amount 900000000000$DENOM --home $DAEMON_HOME --keyring-backend test --home-client $CLI_HOME
+    echo "../$CHAIN_ID/gentx/$GENTX_FILE $DAEMON_HOME/config/gentx/"
     cp ../$CHAIN_ID/gentx/$GENTX_FILE $DAEMON_HOME/config/gentx/
 
     echo "...........Collecting gentxs.............."
