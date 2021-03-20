@@ -5,7 +5,7 @@ DAEMON=bitsongd
 CLI=bitsongcli
 DENOM=ubtsg
 RANDOM_KEY="validatorkeyxxxx"
-CHAIN_ID=bitsong-testnet-4
+CHAIN_ID=bitsong-local-test
 
 GENTX_FILE=$(ls $CHAIN_ID/gentx | head -1)
 LEN_GENTX=$(echo ${#GENTX_FILE})
