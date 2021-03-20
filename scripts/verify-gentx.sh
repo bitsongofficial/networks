@@ -36,11 +36,11 @@ else
     rm -rf $DAEMON_HOME/config/genesis.json
     curl -s https://raw.githubusercontent.com/bitsongofficial/networks/master/$CHAIN_ID/genesis.json > $DAEMON_HOME/config/genesis.json
 
-    GENACC=$(cat ../$CHAIN_ID/gentx/$GENTX_FILE | sed -n 's|.*"delegator_address":"\([^"]*\)".*|\1|p')
-    echo $GENACC
+    #GENACC=$(cat ../$CHAIN_ID/gentx/$GENTX_FILE | sed -n 's|.*"delegator_address":"\([^"]*\)".*|\1|p')
+    #echo $GENACC
 
     echo "12345678" | ./build/$DAEMON add-genesis-account $RANDOM_KEY 1000000000000$DENOM --home $DAEMON_HOME --keyring-backend test --home-client $CLI_HOME
-    ./build/$DAEMON add-genesis-account $GENACC 1000000000$DENOM --home $DAEMON_HOME
+    #./build/$DAEMON add-genesis-account $GENACC 1000000000$DENOM --home $DAEMON_HOME
 
     echo "12345678" | ./build/$DAEMON gentx --name $RANDOM_KEY --amount 900000000000$DENOM --home $DAEMON_HOME --keyring-backend test --home-client $CLI_HOME
     cp ../$CHAIN_ID/gentx/$GENTX_FILE $DAEMON_HOME/config/gentx/
