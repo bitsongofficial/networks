@@ -4,7 +4,7 @@ Please [follow the guide](./GUIDE.md)
 
 ```
 $ shasum -a 256 genesis.json
-f47d7f996e481af5e4de43f9c61cab67c57913a528ffbfb983ded84e54105055  genesis.json
+9b413d0a10a3d97e211bf68fb938daa7a835ad8e9aeffe48048892d9bdf5dd48  genesis.json
 ```
 
 ## Public lcd availables
