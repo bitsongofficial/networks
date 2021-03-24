@@ -136,7 +136,19 @@ bitsongcli keys add <your-wallet-name> --recover
 
 ## Genesis transaction
 
-1. Sign the `gentx` that will be included in `genesis`, if you want, you can add the `--ip` flag to indicate your public ip address
+1. Delete the old genesis
+
+```bash
+rm -f ~/.bitsongd/config/genesis.json
+```
+
+2. Download the new genesis, and copy it to the correct directory
+
+```bash
+wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-5/genesis.json -P ~/.bitsongd/config
+```
+
+3. Sign the `gentx` that will be included in `genesis`, if you want, you can add the `--ip` flag to indicate your public ip address
 
 ```bash
 bitsongd gentx --name <your-wallet-name> --amount XXXXubtsg --ip <your-public-ip>
@@ -146,7 +158,7 @@ By running the command, a genesis transaction will be created and saved to the p
 
 **DO NOT CHANGE NOTHING IN `gentx.json`**
 
-2. Fork the repository dedicated to networks
+5. Fork the repository dedicated to networks
 
 ![step1|690x220](https://btsg.community/uploads/default/original/1X/5b841738c2cd885a4842a8a5907512df5196e4c1.png)
 
@@ -156,25 +168,25 @@ By running the command, a genesis transaction will be created and saved to the p
 cd $HOME && git clone https://github.com/<YOUR-USERNAME>/networks.git && cd $HOME/networks
 ```
 
-3. Create the branch dedicated to sending the TX
+6. Create the branch dedicated to sending the TX
 
 ```
 git checkout -b genesis-<your-moniker>
 ```
 
-4. Check that there are no other TX inside
+7. Check that there are no other TX inside
 
 ```
 ls $HOME/.bitsongd/config/gentx
 ```
 
-5. Copy the gentx
+8. Copy the gentx
 
 ```
 cp $HOME/.bitsongd/config/gentx/* $HOME/networks/bitsong-testnet-5/
 ```
 
-6. If it's your first time using git, you need to do some configuration (optional)
+9. If it's your first time using git, you need to do some configuration (optional)
    **Remember to change the data with your github account data**
 
 ```
@@ -182,14 +194,14 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-7. Add the files and commit the changes
+10. Add the files and commit the changes
 
 ```
 git add bitsong-testnet-5/*
 git commit -m 'feat: gentx for <your-moniker>'
 ```
 
-8. Push the local branch to the remote repository
+11. Push the local branch to the remote repository
 
 ```
 git push -u origin genesis-<your-moniker>
