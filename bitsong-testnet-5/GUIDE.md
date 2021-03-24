@@ -183,7 +183,7 @@ ls $HOME/.bitsongd/config/gentx
 8. Copy the gentx
 
 ```
-cp $HOME/.bitsongd/config/gentx/* $HOME/networks/bitsong-testnet-5/
+cp $HOME/.bitsongd/config/gentx/* $HOME/networks/bitsong-testnet-5/gentx/
 ```
 
 9. If it's your first time using git, you need to do some configuration (optional)
