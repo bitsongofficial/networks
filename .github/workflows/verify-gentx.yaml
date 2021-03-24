@@ -1,0 +1,13 @@
+name: Gentx
+on:
+  pull_request:
+    paths:
+      - "bitsong-testnet-5/gentx/*.json"
+jobs:
+  verify-gentx:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: gentx-validation
+        run: |
+          bash -x ./scripts/verify-gentx.sh
