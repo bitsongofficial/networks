@@ -246,15 +246,13 @@ In case you do not have time to send the `gentx`, don't worry, you can launch yo
 
 Follow the instructions below:
 
-1. Download the new genesis [TODO: ADD LINK]
-
-2. Delete the old genesis
+1. Delete the old genesis
 
 ```bash
 rm -f ~/.bitsongd/config/genesis.json
 ```
 
-3. Download the new genesis, and copy it to the correct directory
+2. Download the new genesis, and copy it to the correct directory
 
 ```bash
 wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-5/genesis.json -P ~/.bitsongd/config
