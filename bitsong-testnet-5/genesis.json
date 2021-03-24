@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2021-03-24T16:00:0.0Z",
+  "genesis_time": "2021-03-24T16:00:00Z",
   "chain_id": "bitsong-testnet-5",
   "consensus_params": {
     "block": {
