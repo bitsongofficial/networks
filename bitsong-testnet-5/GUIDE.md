@@ -226,7 +226,7 @@ compare: genesis-<your-moniker>
 
 Make sure to check the previous steps before opening a PR.
 
-Note: all `gentx` must be sent no later than **Saturday March 24th at 15:30 UTC**.
+Note: all `gentx` must be sent no later than **Wednesday March 24th at 15:15 UTC**.
 
 In case you do not have time to send the `gentx`, don't worry, you can launch your validator after the network has been started.
 
