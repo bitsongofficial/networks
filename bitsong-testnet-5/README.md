@@ -7,6 +7,12 @@ $ shasum -a 256 genesis.json
 9b413d0a10a3d97e211bf68fb938daa7a835ad8e9aeffe48048892d9bdf5dd48  genesis.json
 ```
 
+## Seeds
+
+```
+6121df7bf3e40ff21bf15756aed98ebb65e4d3ec@116.203.104.239:26656,88700c226022d7243f14c8ac8fa99ccdcd853472@65.21.60.235
+```
+
 ## Public lcd availables
 
 ```
