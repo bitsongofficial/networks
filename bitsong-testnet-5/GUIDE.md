@@ -258,6 +258,13 @@ rm -f ~/.bitsongd/config/genesis.json
 wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-5/genesis.json -P ~/.bitsongd/config
 ```
 
+3. Check the shasum
+
+```bash
+$ shasum -a 256 genesis.json
+4ab3850f639b8499a54d3f285fdce3fd2dd3f376955d8492ac801137d8058ce9  genesis.jso
+```
+
 **4. Run the node**
 
 ```bash

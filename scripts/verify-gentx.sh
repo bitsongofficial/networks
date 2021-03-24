@@ -57,11 +57,11 @@ else
     echo "...........Starting node.............."
     ./build/$DAEMON start --home $DAEMON_HOME &
 
-    sleep 5s
+    #sleep 5s
 
-    echo "...checking network status.."
+    #echo "...checking network status.."
 
-    ./build/$CLI status --chain-id $CHAIN_ID --node http://localhost:26657
+    #./build/$CLI status --chain-id $CHAIN_ID --node http://localhost:26657
 
     sleep 5s
 
