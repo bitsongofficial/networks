@@ -262,7 +262,7 @@ wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-t
 
 ```bash
 $ shasum -a 256 genesis.json
-4ab3850f639b8499a54d3f285fdce3fd2dd3f376955d8492ac801137d8058ce9  genesis.jso
+4ab3850f639b8499a54d3f285fdce3fd2dd3f376955d8492ac801137d8058ce9  genesis.json
 ```
 
 **4. Run the node**
