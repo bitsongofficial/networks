@@ -5,12 +5,11 @@ DAEMON=bitsongd
 CLI=bitsongcli
 DENOM=ubtsg
 RANDOM_KEY="validatorkeyxxxx"
-CHAIN_ID=bitsong-testnet-5
+CHAIN_ID=bitsong-1
 
 GENTX_FILE=$(ls $CHAIN_ID/gentx | head -1)
 LEN_GENTX=$(echo ${#GENTX_FILE})
 
-GENTX_DEADLINE=$(date -d '2020-10-19 15:00:00' '+%d/%m/%Y %H:%M:%S');
 now=$(date +"%d/%m/%Y %H:%M:%S")
 
 if [ $LEN_GENTX -eq 0 ]; then
@@ -24,7 +23,7 @@ else
     
     git clone https://github.com/bitsongofficial/go-bitsong
     cd go-bitsong
-    git checkout v0.7.0-rc1
+    git checkout v0.7.0
     make build
     chmod +x ./build/$DAEMON
     chmod +x ./build/$CLI
@@ -35,6 +34,8 @@ else
     echo "...........Fetching genesis.............."
     rm -rf $DAEMON_HOME/config/genesis.json
     curl -s https://raw.githubusercontent.com/bitsongofficial/networks/master/$CHAIN_ID/genesis.json > $DAEMON_HOME/config/genesis.json
+
+    sed -i 's/2021-03-26T20:00:00Z/2021-03-26T12:00:00Z/g' $DAEMON_HOME/config/genesis.json
 
     #GENACC=$(cat ../$CHAIN_ID/gentx/$GENTX_FILE | sed -n 's|.*"delegator_address":"\([^"]*\)".*|\1|p')
     #echo $GENACC
@@ -57,11 +58,11 @@ else
     echo "...........Starting node.............."
     ./build/$DAEMON start --home $DAEMON_HOME &
 
-    #sleep 5s
+    sleep 5s
 
-    #echo "...checking network status.."
+    echo "...checking network status.."
 
-    #./build/$CLI status --chain-id $CHAIN_ID --node http://localhost:26657
+    ./build/$CLI status --chain-id $CHAIN_ID --node http://localhost:26657
 
     sleep 5s
 
