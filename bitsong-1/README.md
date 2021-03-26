@@ -1,6 +1,6 @@
 # bitsong-1
 
-Please follow the guide [TODO: ADD LINK]
+Please [follow the guide](./GUIDE)
 
 ```
 $ shasum -a 256 genesis.json
