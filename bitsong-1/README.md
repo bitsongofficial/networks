@@ -22,7 +22,7 @@ ffa27441ca78a5d41a36f6d505b67a145fd54d8a@95.217.156.228:26656,efd52c1e56b460b1f3
 ## Public lcd availables
 
 ```
----
+- https://lcd-bitsong.itastakers.com/
 ```
 
 ## Console
