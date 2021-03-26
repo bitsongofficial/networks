@@ -1,6 +1,6 @@
 # bitsong-1
 
-Please [follow the guide](./GUIDE)
+Please [follow the guide](./GUIDE.md)
 
 ```
 $ shasum -a 256 genesis.json
@@ -119,7 +119,7 @@ After the network has reached the quorum, the testnet will start automatically!
 
 ## General configurations
 
-[Genesis start at 20210326T20](https://www.timeanddate.com/countdown/launch?iso=20210324T16&p0=1440&msg=bitsong-1&font=slab&csz=1)
+[Genesis start at 20210326T20](https://www.timeanddate.com/countdown/launch?iso=20210326T20&p0=1440&msg=bitsong-1&font=slab&csz=1)
 
 ```
   "genesis_time": "2021-03-26T20:00:00Z",
