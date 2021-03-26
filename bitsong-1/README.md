@@ -4,7 +4,7 @@ Please [follow the guide](./GUIDE.md)
 
 ```
 $ shasum -a 256 genesis.json
-c7c4559364cc15781011b3da4d853cce42b9f2ec1ac5e8b79f634969c0c13e41  genesis.json
+9aca9f71d361f9f018923befbc16cfc0ef8dcc1df7e36e715f2d7808d27e3e74  genesis.json
 ```
 
 ## Seeds
