@@ -1,18 +1,27 @@
-# bitsong-testnet-4
+# bitsong-1
+
+Please [follow the guide](./GUIDE.md)
 
 ```
 $ shasum -a 256 genesis.json
-e41be4d3de2ac1966bd4247d19229f64b1b0bd35fdefcae5316d1c36662b716e  genesis.json
+c7c4559364cc15781011b3da4d853cce42b9f2ec1ac5e8b79f634969c0c13e41  genesis.json
+```
+
+## Seeds
+
+```
+TODO ADD SEED
 ```
 
 ## Public lcd availables
+
 ```
-https://bitsong.stakesystems.io
-https://lcd.testnet4.bitsong.network
+---
 ```
 
 ## Console
-- [BitSong Console](https://console.bitsong.network)
+
+---
 
 ## Setup instructions
 
@@ -22,7 +31,7 @@ https://lcd.testnet4.bitsong.network
 rm -rf ~/go-bitsong
 git clone https://github.com/bitsongofficial/go-bitsong
 cd go-bitsong
-git checkout v0.6.0-beta1
+git checkout v0.7.0
 make install
 bitsongd version --long
 ```
@@ -34,10 +43,12 @@ $ bitsongd version --long
 name: go-bitsong
 server_name: bitsongd
 client_name: bitsongcli
-version: 0.6.0-beta1
-commit: ed1332e344a28984e5bce8e4b87ea6597aa6384c
+version: 0.7.0
+commit: 26a277a67b8d3e0052ace21be7f3a2754171b06b
 build_tags: netgo,ledger
-go: go version go1.13.6 linux/amd64
+go: go version go1.13.15 linux/amd64
+build_deps:
+....
 ```
 
 ### 1. Delete the old genesis
@@ -49,7 +60,7 @@ rm -f ~/.bitsongd/config/genesis.json
 ### 2. Download the new genesis, and copy it to the correct directory
 
 ```
-wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-4/genesis.json -P ~/.bitsongd/config
+wget https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-1/genesis.json -P ~/.bitsongd/config
 ```
 
 ### 3. Run the node
@@ -90,7 +101,7 @@ bitsongcli status
 sudo journalctl -u bitsongd -f
 ```
 
-Now we have to wait for the launch of the network which will take place on [October 16th, 2020 at 15:00 UTC](https://www.timeanddate.com/countdown/launch?iso=20201016T15&p0=1440&msg=bitsong-testnet-4&font=slab&csz=1)
+Now we have to wait for the launch of the network which will take place on [March 26th, 2021 at 20:00 UTC](https://www.timeanddate.com/countdown/launch?iso=20210326T20&p0=1440&msg=bitsong-1&font=slab&csz=1)
 
 After the network has reached the quorum, the testnet will start automatically!
 
@@ -99,44 +110,20 @@ After the network has reached the quorum, the testnet will start automatically!
 ## Public Seeds
 
 ```
-3ee47b80be27d58f28653f21d75fb7e142bd8f44@168.119.172.72:26656
-8011a60a2155599021886ffdb3524e00f687f2ba@78.47.132.180:26657
-```
 
-## Faucet
-
-**PLEASE DO NOT ABUSE**
-
-```
-Mnemonic
-system brother slender senior together cube nasty truth obtain half humor cost accident match wild also exotic file buffalo program antenna run bacon control
-
-Address
-bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
 ```
 
 ## Blockexplorer
 
-[BitSong Lite Explorer](https://testnet2.explorebitsong.com)
-
-## Changelog
-
-```
-- Remove Module Track (alpha)
-- Remove Module Reward (alpha)
-- Cosmos-SDK v0.39.1
-- Tendermint v0.33.7
-- Initial supply 116,289,228 btsg
-- Max validators capped to 100
-```
+--
 
 ## General configurations
 
-[Genesis start at 20201016T15](https://www.timeanddate.com/countdown/launch?iso=20201016T15&p0=1440&msg=bitsong-testnet-4&font=slab&csz=1)
+[Genesis start at 20210326T20](https://www.timeanddate.com/countdown/launch?iso=20210326T20&p0=1440&msg=bitsong-1&font=slab&csz=1)
 
 ```
-  "genesis_time": "2020-10-16T15:00:00Z",
-  "chain_id": "bitsong-testnet-4",
+  "genesis_time": "2021-03-26T20:00:00Z",
+  "chain_id": "bitsong-1",
 ```
 
 ## Consensus params
@@ -153,7 +140,9 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
       "max_age_duration": "172800000000000"
     },
     "validator": {
-      "pub_key_types": ["ed25519"]
+      "pub_key_types": [
+        "ed25519"
+      ]
     }
   },
 ```
@@ -162,7 +151,7 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
 
 ```
     "bank": {
-      "send_enabled": true
+      "send_enabled": false
     },
 ```
 
@@ -215,7 +204,7 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
         "inflation_max": "0.200000000000000000", // 20%
         "inflation_min": "0.070000000000000000", // 7%
         "goal_bonded": "0.670000000000000000", // 67%
-        "blocks_per_year": "5733820"
+        "blocks_per_year": "5733820" // ~5.5sec per block
       }
     },
 ```
@@ -235,10 +224,10 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
             "amount": "512000000"
           }
         ],
-        "max_deposit_period": "172800000000000" // 2 days
+        "max_deposit_period": "1296000000000000" // 15 days
       },
       "voting_params": {
-        "voting_period": "172800000000000" // 2 days
+        "voting_period": "1296000000000000" // 15 days
       },
       "tally_params": {
         "quorum": "0.400000000000000000", // 40%
@@ -253,8 +242,8 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
 ```
     "staking": {
       "params": {
-        "unbonding_time": "432000000000000", // 5 days
-        "max_validators": 100,
+        "unbonding_time": "1814400000000000", // 21 days
+        "max_validators": 64,
         "max_entries": 7,
         "historical_entries": 0,
         "bond_denom": "ubtsg"
@@ -274,9 +263,9 @@ bitsong1kv774jpkas5lnelseu2qw84ye3ez4qgnrenaa8
 ```
     "slashing": {
       "params": {
-        "signed_blocks_window": "1000", // ~83min @ 5.00s block time
-        "min_signed_per_window": "0.050000000000000000", // can be down for up 78.85min without slashing
-        "downtime_jail_duration": "600000000000", // 10min
+        "signed_blocks_window": "10000", // ~15.2h @ 5.50s block time
+        "min_signed_per_window": "0.050000000000000000", // can be down for up ~14.4h without slashing
+        "downtime_jail_duration": "3600000000000", // 1h
         "slash_fraction_double_sign": "0.050000000000000000", // 5%
         "slash_fraction_downtime": "0.010000000000000000" // 1%
       },
