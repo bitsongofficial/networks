@@ -2,7 +2,7 @@ name: Gentx
 on:
   pull_request:
     paths:
-      - "bitsong-1/gentx/*.json"
+      - "bitsong-local/gentx/*.json"
 jobs:
   verify-gentx:
     runs-on: ubuntu-latest
