@@ -10,7 +10,7 @@ $ shasum -a 256 genesis.json
 ## Persistent Peers
 
 ```
-e9fea0509b1a2d16a10ef9fdea0a4e3edc7ca485@185.144.83.158:26656
+e9fea0509b1a2d16a10ef9fdea0a4e3edc7ca485@185.144.83.158:26656,8208adac8b09f3e2499dfaef24bb89a2d190a7a3@164.68.109.246:26656
 ```
 
 ## Seeds
