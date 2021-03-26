@@ -35,7 +35,7 @@ else
     rm -rf $DAEMON_HOME/config/genesis.json
     curl -s https://raw.githubusercontent.com/bitsongofficial/networks/master/$CHAIN_ID/genesis.json > $DAEMON_HOME/config/genesis.json
 
-    sed -i 's/2021-03-26T20:0:00Z/2021-03-26T12:00:00Z/g' $DAEMON_HOME/config/genesis.json
+    sed -i 's/2021-03-26T20:00:00Z/2021-03-26T12:00:00Z/g' $DAEMON_HOME/config/genesis.json
 
     #GENACC=$(cat ../$CHAIN_ID/gentx/$GENTX_FILE | sed -n 's|.*"delegator_address":"\([^"]*\)".*|\1|p')
     #echo $GENACC
