@@ -59,7 +59,7 @@ sed -i 's/swagger = false/swagger = true/g' ~/.bitsongd/config/app.toml
 ### Download the genesis
 
 ```
-wget https://github.com/bitsongofficial/networks/raw/main/bitsong-testnet-6/genesis.json -O ~/.bitsongd/config/genesis.json
+wget https://github.com/bitsongofficial/networks/raw/master/bitsong-testnet-6/genesis.json -O ~/.bitsongd/config/genesis.json
 ```
 
 ### Genesis checksum
