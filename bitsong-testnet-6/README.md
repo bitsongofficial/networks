@@ -188,3 +188,7 @@ bitsongd tx staking create-validator \
 --gas-prices="0.025ubtsg" \
 --from=<key-name>
 ```
+
+## Incentivized tasks
+
+[bitsong-testnet-6 incentivized (phase 1)](./REWARDS.md)
