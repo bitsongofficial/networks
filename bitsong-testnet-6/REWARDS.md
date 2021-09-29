@@ -63,12 +63,6 @@ bitsongd tx gov vote 2 yes --from <key-name> -b block --chain-id bitsong-testnet
 
 Make your first interblockchain transaction! Send bitsong to a cosmos address. To do this use the following command
 
-```
-bitsongd tx ibc-transfer transfer transfer channel-3 cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np 2000000ubtsg --from <key-name> -b block --chain-id bitsong-testnet-6
-```
-
-## Task 6: Get some faucet from cosmoshub-testnet
-
 1. Install `gaia 5.05`
 
 ```
@@ -85,7 +79,15 @@ gaiad config broadcast-mode block
 gaiad keys add <key-name>
 ```
 
-3. Request some test tokens to interact on cosmoshub-testnet, change `cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np` with your cosmos testnet address
+3. transfer btsg to your new cosmos address make sure to change `cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np` with your new key
+
+```
+bitsongd tx ibc-transfer transfer transfer channel-3 cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np 2000000ubtsg --from <key-name> -b block --chain-id bitsong-testnet-6
+```
+
+## Task 6: Get some faucet from cosmoshub-testnet
+
+Request some test tokens to interact on cosmoshub-testnet, change `cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np` with your cosmos testnet address
 
 ```
 curl -X POST -d '{"address": "cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np"}' https://faucet.testnet.cosmos.network
