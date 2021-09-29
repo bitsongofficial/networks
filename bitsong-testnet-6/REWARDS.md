@@ -64,31 +64,47 @@ bitsongd tx gov vote 2 yes --from <key-name> -b block --chain-id bitsong-testnet
 Make your first interblockchain transaction! Send bitsong to a cosmos address. To do this use the following command
 
 ```
-[TODO: available after voting period]
+bitsongd tx ibc-transfer transfer transfer channel-3 cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np 2000000ubtsg --from <key-name> -b block --chain-id bitsong-testnet-6
 ```
 
 ## Task 6: Get some faucet from cosmoshub-testnet
 
-Request some test tokens to interact on cosmoshub-testnet
+1. Install `gaia 5.05`
 
 ```
-[TODO: available after voting period]
+cd ~ && git clone --branch v5.0.5 https://github.com/cosmos/gaia
+cd gaia && make install
+gaiad config node https://rpc.testnet.cosmos.network:443
+gaiad config chain-id cosmoshub-testnet
+gaiad config broadcast-mode block
+```
+
+2. Generate a new `cosmos` account
+
+```
+gaiad keys add <key-name>
+```
+
+3. Request some test tokens to interact on cosmoshub-testnet, change `cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np` with your cosmos testnet address
+
+```
+curl -X POST -d '{"address": "cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np"}' https://faucet.testnet.cosmos.network
 ```
 
 ## Task 7: Add your liquidity pool
 
-Add liquidity to the BTSG/ATOM pool
+Add liquidity to the BTSG/PHOTON pool
 
 ```
-[TODO: available after voting period]
+gaiad tx liquidity deposit 10 1000000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4,1000000uphoton --from <key-name>
 ```
 
 ## Task 8: Swap atom for btsg
 
-Execute your first btsg/atom swap
+Execute your first BTSG/PHOTON swap
 
 ```
-[TODO: available after voting period]
+gaiad tx liquidity swap 10 1 100000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 uphoton 1.01 0.003 --from <key-name>
 ```
 
 ## Task 9: Swap btsg for atom
@@ -96,7 +112,7 @@ Execute your first btsg/atom swap
 Execute a new swap the other way around atom/btsg
 
 ```
-[TODO: available after voting period]
+gaiad tx liquidity swap 10 1 100000uphoton ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 0.95 0.003 --from <key-name>
 ```
 
 ## Task 10: Remove your liquidity
@@ -104,7 +120,7 @@ Execute a new swap the other way around atom/btsg
 Now remove liquidity from the pool
 
 ```
-[TODO: available after voting period]
+gaiad tx liquidity withdraw 10 1000pool3788463F94E17E139ACCD919A2840A63A767F5F90B325C4EC7938F73F941A3EB --from <key-name>
 ```
 
 ## Task 11: Send back your btsg from cosmoshub-testnet to bitsong
@@ -112,7 +128,7 @@ Now remove liquidity from the pool
 It's time to get some btsg back. You can do it with this command
 
 ```
-[TODO: available after voting period]
+gaiad tx ibc-transfer transfer transfer channel-158 bitsong1usppkq8egtclqp5yfrxqwfa6xv5tlzjj2el2gr 100ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 --from <key-name> --gas 400000
 ```
 
 ## Task 12: Send some atom from cosmoshub-testnet to bitsong
@@ -120,7 +136,7 @@ It's time to get some btsg back. You can do it with this command
 Let's also try to transfer some atoms from `cosmoshub-testnet` to `bitsong-tesnet-6`.
 
 ```
-[TODO: available after voting period]
+gaiad tx ibc-transfer transfer transfer channel-158 bitsong1usppkq8egtclqp5yfrxqwfa6xv5tlzjj2el2gr 100uphoton --from <key-name> --gas 400000
 ```
 
 Amazing! You have completed your tasks, fill out the **[module](https://forms.gle/Q9BVTJUbeMGdESA4A)** and indicate the txs of your tasks. The txs will be shortly analyzed and the prizes will be allocated in bitsong-2
