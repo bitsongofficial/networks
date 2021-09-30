@@ -101,7 +101,7 @@ Add liquidity to the BTSG/PHOTON pool
 gaiad tx liquidity deposit 10 1000000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4,1000000uphoton --from <key-name>
 ```
 
-## Task 8: Swap atom for btsg
+## Task 8: Swap btsg for atom
 
 Execute your first BTSG/PHOTON swap
 
@@ -109,7 +109,7 @@ Execute your first BTSG/PHOTON swap
 gaiad tx liquidity swap 10 1 100000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 uphoton 1.01 0.003 --from <key-name>
 ```
 
-## Task 9: Swap btsg for atom
+## Task 9: Swap atom for btsg
 
 Execute a new swap the other way around atom/btsg
 
