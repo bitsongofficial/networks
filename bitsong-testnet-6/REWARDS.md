@@ -82,7 +82,7 @@ gaiad keys add <key-name>
 3. transfer btsg to your new cosmos address make sure to change `cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np` with your new key
 
 ```
-bitsongd tx ibc-transfer transfer transfer channel-3 cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np 2000000ubtsg --from <key-name> -b block --chain-id bitsong-testnet-6
+bitsongd tx ibc-transfer transfer transfer channel-4 cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np 2000000ubtsg --from <key-name> -b block --chain-id bitsong-testnet-6 --timeout-height 1000000
 ```
 
 ## Task 6: Get some faucet from cosmoshub-testnet
@@ -98,7 +98,7 @@ curl -X POST -d '{"address": "cosmos1xpj4wk3qx2pfqry3fvggye6pluua9m64jzk8np"}' h
 Add liquidity to the BTSG/PHOTON pool
 
 ```
-gaiad tx liquidity deposit 10 1000000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4,1000000uphoton --from <key-name>
+gaiad tx liquidity deposit 11 1000000ibc/F1C65AF12C7543218D0B76444F3503051E4FBF2B06C20D0A721F9CF9CB8795B7,1000000uphoton --from <key-name>
 ```
 
 ## Task 8: Swap atom for btsg
@@ -106,7 +106,7 @@ gaiad tx liquidity deposit 10 1000000ibc/0089C53C77684D611D90E8C837B6C07E2E01858
 Execute your first BTSG/PHOTON swap
 
 ```
-gaiad tx liquidity swap 10 1 100000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 uphoton 1.01 0.003 --from <key-name>
+gaiad tx liquidity swap 11 1 100000ibc/F1C65AF12C7543218D0B76444F3503051E4FBF2B06C20D0A721F9CF9CB8795B7 uphoton 1.10 0.003 --from <key-name>
 ```
 
 ## Task 9: Swap btsg for atom
@@ -114,7 +114,7 @@ gaiad tx liquidity swap 10 1 100000ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE
 Execute a new swap the other way around atom/btsg
 
 ```
-gaiad tx liquidity swap 10 1 100000uphoton ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 0.95 0.003 --from <key-name>
+gaiad tx liquidity swap 11 1 100000uphoton ibc/F1C65AF12C7543218D0B76444F3503051E4FBF2B06C20D0A721F9CF9CB8795B7 0.95 0.003 --from <key-name>
 ```
 
 ## Task 10: Remove your liquidity
@@ -122,7 +122,7 @@ gaiad tx liquidity swap 10 1 100000uphoton ibc/0089C53C77684D611D90E8C837B6C07E2
 Now remove liquidity from the pool
 
 ```
-gaiad tx liquidity withdraw 10 1000pool3788463F94E17E139ACCD919A2840A63A767F5F90B325C4EC7938F73F941A3EB --from <key-name>
+gaiad tx liquidity withdraw 11 1000pool3DF55AB764C10CC4A67AE9DA9F34B2AC7DDFC26FB64D086566D2D9B21E73E3B6 --from <key-name>
 ```
 
 ## Task 11: Send back your btsg from cosmoshub-testnet to bitsong
@@ -130,7 +130,7 @@ gaiad tx liquidity withdraw 10 1000pool3788463F94E17E139ACCD919A2840A63A767F5F90
 It's time to get some btsg back. You can do it with this command
 
 ```
-gaiad tx ibc-transfer transfer transfer channel-158 bitsong1usppkq8egtclqp5yfrxqwfa6xv5tlzjj2el2gr 100ibc/0089C53C77684D611D90E8C837B6C07E2E01858CE0ED98CA9154E6ECA50763C4 --from <key-name> --gas 400000
+gaiad tx ibc-transfer transfer transfer channel-160 <bitsong-address> 100ibc/F1C65AF12C7543218D0B76444F3503051E4FBF2B06C20D0A721F9CF9CB8795B7 --from <key-name> --gas 400000 --timeout-height 1200000
 ```
 
 ## Task 12: Send some atom from cosmoshub-testnet to bitsong
@@ -138,7 +138,7 @@ gaiad tx ibc-transfer transfer transfer channel-158 bitsong1usppkq8egtclqp5yfrxq
 Let's also try to transfer some atoms from `cosmoshub-testnet` to `bitsong-tesnet-6`.
 
 ```
-gaiad tx ibc-transfer transfer transfer channel-158 bitsong1usppkq8egtclqp5yfrxqwfa6xv5tlzjj2el2gr 100uphoton --from <key-name> --gas 400000
+gaiad tx ibc-transfer transfer transfer channel-160 <bitsong-address> 100uphoton --from <key-name> --gas 400000 --timeout-height 1200000
 ```
 
 Amazing! You have completed your tasks, fill out the **[module](https://forms.gle/Q9BVTJUbeMGdESA4A)** and indicate the txs of your tasks. The txs will be shortly analyzed and the prizes will be allocated in bitsong-2
