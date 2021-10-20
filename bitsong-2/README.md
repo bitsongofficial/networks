@@ -1,6 +1,6 @@
 # bitsong-2
 
-All'interno di questo repository trovere la guida di aggiornamento a `bitsong-2` e la genesi per i full nodes.
+Inside this repository you can find the Big Bang Upgrade Guide to bitsong-2 and the genesis for the full nodes.
 
-- [Guida aggiornamento](./UPGRADE.md)
+- [Upgrade Guide](./UPGRADE.md)
 - Genesis
