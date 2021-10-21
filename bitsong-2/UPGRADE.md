@@ -81,7 +81,7 @@ This will migrate our exported state into the required `genesis.json` file to st
 9. Verify the SHA256 of the final genesis JSON:
 ```
 $ jq -S -c -M '' genesis.json | shasum -a 256
-98684b8321c9b9c65d1ce4783d4d6f163291fb90ebcd604d04a95413526321f9  genesis.json
+b009b7e745366bbe2f7fbff553e3c41a587fe7236b578e81b3d94dca111b22cb  genesis.json
 ```
 
 Compare this value with other validators / full node operators of the network. It is important that each party can reproduce the same genesis.json file from the steps accordingly.
