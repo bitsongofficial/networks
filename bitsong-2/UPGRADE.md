@@ -110,7 +110,7 @@ Automated audits of the genesis state can take some minutes using the crisis mod
 
 ## Guidance for Full Node Operators
 
-1. Verify you are currently running the correct version (v0.8.0) of `go-bitsong`:
+1. Verify you are currently running the correct version (v0.7.0) of `go-bitsong`:
 
 ```
 bitsongd version --long
