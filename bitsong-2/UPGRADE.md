@@ -46,7 +46,7 @@ Compare this value with other validators / full node operators of the network. G
 
 ```
 $ jq -S -c -M '' bitsong_1_genesis_export.json | shasum -a 256
-[SHA256_VALUE]  bitsong_1_genesis_export.json
+98684b8321c9b9c65d1ce4783d4d6f163291fb90ebcd604d04a95413526321f9  bitsong_1_genesis_export.json
 ```
 
 6. At this point you now have a valid exported genesis state! All further steps now require v0.8.0 of `go-bitsong`. Cross check your genesis hash with other peers (other validators) in the chat rooms.
@@ -81,7 +81,7 @@ This will migrate our exported state into the required `genesis.json` file to st
 9. Verify the SHA256 of the final genesis JSON:
 ```
 $ jq -S -c -M '' genesis.json | shasum -a 256
-[SHA256_VALUE]  genesis.json
+98684b8321c9b9c65d1ce4783d4d6f163291fb90ebcd604d04a95413526321f9  genesis.json
 ```
 
 Compare this value with other validators / full node operators of the network. It is important that each party can reproduce the same genesis.json file from the steps accordingly.
