@@ -2,6 +2,8 @@
 
 ## Upgrade procedure
 
+Please follow this guide only if you come `bitsong-2` post-mortem
+
 1. Stop your instance
 ```
 bitsongd stop
