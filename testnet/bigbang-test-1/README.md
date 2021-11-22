@@ -11,7 +11,7 @@
 - API - https://api.testnet.bitsong.network
 - Persistent peers - `2acc8a6528d453dce94d9a4ca2f2720ac0d61be9@34.77.153.153:26656`
 - Chain id - `bigbang-test-1`
-- Genesis - `TODO`
+- Genesis - `https://raw.githubusercontent.com/bitsongofficial/networks/master/testnet/bigbang-test-1/genesis.json`
 
 ## Install `go-bitsong`
 
