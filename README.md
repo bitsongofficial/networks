@@ -1,44 +1,15 @@
-# BitSong Testnets
+# BitSong Networks
 
-This repo collects the genesis and configuration files for the various BitSong testnets. It exists so the [BitSong](https://github.com/BitSongOfficial/go-bitsong) repo does not get bogged down with large genesis files and status updates.
+This repository contains the official genesis file for current and historical [BitSong](https://bitsong.io) networks.
 
-## Genesis & Seeds
+## Latest Mainnet
 
-### bitsong-testnet-4
+Chain ID: [bitsong-1](bitsong-1/README.md)  
 
-Fetch the testnet's `genesis.json` file into `bitsongd`'s config directory.
+## Upcoming Mainnet
+Chain ID: [bitsong-2](bitsong-2/README.md)  
+Upgrade: [Instructions](bitsong-2/UPGRADE.md)  
 
-```bash
-mkdir -p $HOME/.bitsongd/config
-curl https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-4/genesis.json > $HOME/.bitsongd/config/genesis.json
-```
+## Latest Testnet
 
-### bitsong-testnet-2
-
-Fetch the testnet's `genesis.json` file into `bitsongd`'s config directory.
-
-```bash
-mkdir -p $HOME/.bitsongd/config
-curl https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-2/genesis.json > $HOME/.bitsongd/config/genesis.json
-```
-
-**persistent peers**
-
-```bash
-f9d91f1f553a945ccb621ea43c49f5fe43a08d0d@88.99.143.175:26656
-```
-
-### bitsong-testnet-1
-
-Fetch the testnet's `genesis.json` file into `bitsongd`'s config directory.
-
-```bash
-mkdir -p $HOME/.bitsongd/config
-curl https://raw.githubusercontent.com/bitsongofficial/networks/master/bitsong-testnet-1/genesis.json > $HOME/.bitsongd/config/genesis.json
-```
-
-**persistent peers**
-
-```bash
-
-```
+-----
