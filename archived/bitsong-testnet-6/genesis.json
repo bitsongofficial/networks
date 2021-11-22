@@ -1,0 +1,735 @@
+{
+    "app_hash": "",
+    "app_state": {
+        "auth": {
+            "params": {
+                "max_memo_characters": "256",
+                "sig_verify_cost_ed25519": "590",
+                "sig_verify_cost_secp256k1": "1000",
+                "tx_sig_limit": "7",
+                "tx_size_cost_per_byte": "10"
+            }
+        },
+        "bank": {
+            "denom_metadata": [
+                {
+                    "base": "ubtsg",
+                    "denom_units": [
+                        {
+                            "aliases": [],
+                            "denom": "btsg",
+                            "exponent": 6
+                        },
+                        {
+                            "aliases": [
+                                "microbtsg"
+                            ],
+                            "denom": "ubtsg",
+                            "exponent": 0
+                        }
+                    ],
+                    "description": "The BitSong’s Network native coin",
+                    "display": "btsg"
+                }
+            ],
+            "params": {
+                "default_send_enabled": true,
+                "send_enabled": []
+            },
+            "supply": [
+                {
+                    "amount": "109170020152927",
+                    "denom": "ubtsg"
+                }
+            ]
+        },
+        "capability": {
+            "index": "1",
+            "owners": []
+        },
+        "crisis": {
+            "constant_fee": {
+                "amount": "133333000000",
+                "denom": "ubtsg"
+            }
+        },
+        "distribution": {
+            "delegator_starting_infos": [],
+            "delegator_withdraw_infos": [
+                {
+                    "delegator_address": "bitsong18wf0w252jxk3kgl5vlst8ttat8xzfnvenc4zxh",
+                    "withdraw_address": "bitsong1nm50zycnm9yf33rv8n6lpks24usxzahkmdm69g"
+                }
+            ],
+            "fee_pool": {
+                "community_pool": [
+                    {
+                        "amount": "15085710555079.000000000000000000",
+                        "denom": "ubtsg"
+                    }
+                ]
+            },
+            "outstanding_rewards": [],
+            "params": {
+                "base_proposer_reward": "0.010000000000000000",
+                "bonus_proposer_reward": "0.040000000000000000",
+                "community_tax": "0.020000000000000000",
+                "withdraw_addr_enabled": true
+            },
+            "previous_proposer": "bitsongvalcons18gvshkalp5lx39cr2qhqaf7mvy58wyruxyjpnv",
+            "validator_accumulated_commissions": [
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1zuc0kljzv5mutgk0ddufp4vgvpy04dhz07dlxp"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1rgtyd3uj3m0rr684hy3590y3vjcm9enhamsm6r"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1rtxprc6emy5jnqm88ssf0agernku83s2rg5tm7"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1y3sz27dfqh3fa5q305sx9s5lje07efr0cz2q2u"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper19w8p0dwcq0p76lpaq3qyjlqgm3pt3z7qg342pm"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper19ah9302mh80pvv5zeztdr6qcqk6z52frn6rjj5"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1x2slrjfmgxq7qx3xwmsjue73t5ynmwy7jgpdtr"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1xtxvvahw35cepycmsrvjtzty4fy6y4yh3qyrnr"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1xe4et8cypskz6xggqa0ahgsnpqg7ac8dt52mgy"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper189y5r7c3a9a2kpthd5ah6l7za2jz7p8yw3rz9f"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper18xfqngs09n7a86lesrh4q5atjx37a3qc56hqhw"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper18wf0w252jxk3kgl5vlst8ttat8xzfnvejuftk2"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper18nqd69k3kgns9tyvq8e8supsvx9wgwwu60c9np"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper184qrd7ucdtker9evyqu4lgh7fx5hgv7z8mzz4y"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1gf39p555c565804assht6tqvgrjgpyn30wssq8"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1gktsym0w2xvutpqe8a9tvs6c4qrts8wnt8nnfp"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1fkj2cn209yeexxyets98evrcmmds23hck0lyzq"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1f7qapscfpqzhwvhulc7pepd66wqd3963cq2p43"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1fl489yump3c47ly74g3fg3kj0wkumke6z0t2za"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper129y6g55wz7mz9vs2nudfvfdaun80fuphnltfpf"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper12xtuwyt599dv57y7v007qpp230ph3utkssnx7n"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper12gt92p97xhwd8xsp0f54nadzc7r2utakvverr8"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper12d0dae3qm4et9r5l2npwrmwknax07yd0rrlhxx"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper125hdkukw4pu2urhj4nv366q0avdqv24twga2kd"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper12a627cpjyez9ne06nttzqrgt067znnhqqlguv0"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1d9mue6sxrxgcd8rz6cdmeamw4cey3c243ll3gj"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1dthr54nysxnltnaxk4nmx2udqvlst8e5qh2yzw"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1dn89hnfs8f85j3plzqc9my5ntfqrrus3lx0y2m"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1dmmupr5qqy07sksct3au8tx9vuh224vg53fl6x"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1wtycu6ypkap6r5yxs9whzkdpq9cldl3dksqtdx"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1wtf99e8l5k2yxxc0rj6xwxj7mfam9hfnjqznja"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1wnhryryc0k3m92ch7qvtpc848f3ket83nxvazj"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1wn7utf3p4pvudeudqx8l2dj6qsjve0uevtfc2p"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper10gwt8pf92qnf4ym42xs593gxfmwze57vtw0yw8"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1sr97dlwwc3420dyxg50cldm4yqxtl7x2y4tzy2"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1stxt50ygdlfwu7erkyps3j4wfq6vx935ry53ne"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper139dppl6gyerq8yaweksajut3urwyygsz7r4ej4"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper13u5jg3hnj7jag0syw0hr93r4waqtn7avrcmyzx"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1j0mpryq0r0gl80xty6x7u7a83gelfd70zxrx49"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1jsaud5d8weze74a5e5w9ercxamtglg9wapc43m"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1nz9e4ygv445hwgttmzj255dvw379qc0kk8w8jt"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1n2pxjj5805wvhx409a47dzj7g5e46zny7htddh"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1nw4wmjq7le0h993tn27kmnqk2y8mdvhutzklgk"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1nj08dyw3q0fayh3y203x7a3zr3kzh79330ffef"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper15wlvlh67ntteayen47rwyuekq3k2unusqvpuqr"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1403j638u8jtyu9zyhcc9p0cl596y63u75vnkj0"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1kqk0khpylvmecvldfm6cu5nhqg6r4swd7k55ey"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1kmngdftrv8rq79eswfw0k3z26ah77h5luacg0e"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1eflcvhl567dsdf0qlz48jth89a8qv8tytxpllz"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1e5w9w2aqp6mz6tsyregj8gvcpyunkcwlwvywxs"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1e4x227p8nqms0cp5j4mmfkqfxmnq8d8tz6dlpj"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1ech3swu5jeuenxzgd0rq9xz6yz3yn6t0v2x0tw"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper16r7fdhkusskwjymqx7pehhnuka5x0v8whm4h56"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper16wgum78qxca2vrk3s45lu0cc52pj82hjs3h04z"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1m8ps45ltlt0vejjm2hqtu26jkd8rfkz9vwu5tw"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1mf4f7xcqx3x5uuq4vj86p6ck3fqmk299seukp6"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1mceksy7l3xenuyx4dzl64erf3fh29a3r2ercnz"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1up87cpxu86wv30k4d2g8tzhhqcka3n5mhmuf4f"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1u6hq8svq4td2e80ucj3whmxh9uehf8nygh4hld"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1ul49tmtdq3rlurss39kjf3m8a0dtehwyte6jfp"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1av9wz7f2kn8wd5pdw9j99nyf533re9dljxnxf2"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1aa4z7tyml6tcw5arckfx3xqszcedn4gu8su8gz"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1aakd7kru6n9l2ty565j3t893ygadc9xz0c65mk"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper17rrtxpsvf84pakruwg5nm4f0c4z2k0crvveyk9"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper17343qmv2gpe79t5f87gqg3m6vzfz33z9ssh5x0"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper17hz5v8x4m8efjnd6y8qvtgj7t5lfh6gah39z7t"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1ltu429emv4tkn34n7795dxmeagl78ffqazwf9c"
+                },
+                {
+                    "accumulated": {
+                        "commission": []
+                    },
+                    "validator_address": "bitsongvaloper1l4g6s4hstt6qfmakrthcjjqt47l2hgv3202ckl"
+                }
+            ],
+            "validator_current_rewards": [],
+            "validator_historical_rewards": [],
+            "validator_slash_events": []
+        },
+        "evidence": {
+            "evidence": []
+        },
+        "genutil": {
+            "gen_txs": []
+        },
+        "gov": {
+            "deposit_params": {
+                "max_deposit_period": "1296000s",
+                "min_deposit": [
+                    {
+                        "amount": "512000000",
+                        "denom": "ubtsg"
+                    }
+                ]
+            },
+            "deposits": [],
+            "proposals": [
+                {
+                    "content": {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "changes": [
+                            {
+                                "key": "sendenabled",
+                                "subspace": "bank",
+                                "value": "true"
+                            }
+                        ],
+                        "description": "Enable transfers of Bitsong token (ubtsg)",
+                        "title": "Bitsong Transfer Enablement"
+                    },
+                    "deposit_end_time": "2021-04-14T12:38:14.759588862Z",
+                    "final_tally_result": {
+                        "abstain": "0",
+                        "no": "0",
+                        "no_with_veto": "0",
+                        "yes": "17002680239267"
+                    },
+                    "proposal_id": "1",
+                    "status": "PROPOSAL_STATUS_PASSED",
+                    "submit_time": "2021-03-30T12:38:14.759588862Z",
+                    "total_deposit": [
+                        {
+                            "amount": "512000000",
+                            "denom": "ubtsg"
+                        }
+                    ],
+                    "voting_end_time": "2021-04-14T13:23:16.813995938Z",
+                    "voting_start_time": "2021-03-30T13:23:16.813995938Z"
+                }
+            ],
+            "starting_proposal_id": "2",
+            "tally_params": {
+                "quorum": "0.400000000000000000",
+                "threshold": "0.500000000000000000",
+                "veto_threshold": "0.334000000000000000"
+            },
+            "votes": [],
+            "voting_params": {
+                "voting_period": "86400s"
+            }
+        },
+        "ibc": {
+            "channel_genesis": {
+                "ack_sequences": [],
+                "acknowledgements": [],
+                "channels": [],
+                "commitments": [],
+                "next_channel_sequence": "0",
+                "receipts": [],
+                "recv_sequences": [],
+                "send_sequences": []
+            },
+            "client_genesis": {
+                "clients": [],
+                "clients_consensus": [],
+                "clients_metadata": [],
+                "create_localhost": false,
+                "next_client_sequence": "0",
+                "params": {
+                    "allowed_clients": [
+                        "07-tendermint"
+                    ]
+                }
+            },
+            "connection_genesis": {
+                "client_connection_paths": [],
+                "connections": [],
+                "next_connection_sequence": "0"
+            }
+        },
+        "mint": {
+            "minter": {
+                "annual_provisions": "11233941186056.910697197473787165",
+                "inflation": "0.102903172243922409"
+            },
+            "params": {
+                "blocks_per_year": "5733820",
+                "goal_bonded": "0.670000000000000000",
+                "inflation_max": "0.200000000000000000",
+                "inflation_min": "0.070000000000000000",
+                "inflation_rate_change": "0.130000000000000000",
+                "mint_denom": "ubtsg"
+            }
+        },
+        "slashing": {
+            "missed_blocks": [],
+            "params": {
+                "downtime_jail_duration": "3600s",
+                "min_signed_per_window": "0.050000000000000000",
+                "signed_blocks_window": "10000",
+                "slash_fraction_double_sign": "0.050000000000000000",
+                "slash_fraction_downtime": "0.010000000000000000"
+            },
+            "signing_infos": [
+                {
+                    "address": "bitsongvalcons14tg5gfhr82kutac50g47ftwzgnz0tpnep3atew",
+                    "validator_signing_info": {
+                        "address": "bitsongvalcons14tg5gfhr82kutac50g47ftwzgnz0tpnep3atew",
+                        "index_offset": "2",
+                        "jailed_until": "2021-09-15T09:35:14.394281371Z",
+                        "missed_blocks_counter": "2",
+                        "start_height": "0",
+                        "tombstoned": false
+                    }
+                }
+            ]
+        },
+        "staking": {
+            "delegations": [
+                {
+                    "delegator_address": "bitsong1zq68dx423frv8yss5skqyg5um97vpefefe2enq",
+                    "shares": "24000000000.000000000000000000",
+                    "validator_address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh"
+                },
+                {
+                    "delegator_address": "bitsong1h882ezq7dyewld6gfv2e06qymvjxnu842586h2",
+                    "shares": "1000000000.000000000000000000",
+                    "validator_address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh"
+                },
+                {
+                    "delegator_address": "bitsong1ech3swu5jeuenxzgd0rq9xz6yz3yn6t0dw6xmn",
+                    "shares": "354535353.535353535353535353",
+                    "validator_address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh"
+                },
+                {
+                    "delegator_address": "bitsong1usppkq8egtclqp5yfrxqwfa6xv5tlzjj2el2gr",
+                    "shares": "15000000000.000000000000000000",
+                    "validator_address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh"
+                }
+            ],
+            "exported": true,
+            "last_total_power": "39950",
+            "last_validator_powers": [
+                {
+                    "address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh",
+                    "power": "39950"
+                }
+            ],
+            "params": {
+                "bond_denom": "ubtsg",
+                "historical_entries": 10000,
+                "max_entries": 7,
+                "max_validators": 64,
+                "unbonding_time": "1814400s"
+            },
+            "redelegations": [],
+            "unbonding_delegations": [],
+            "validators": [
+                {
+                    "commission": {
+                        "commission_rates": {
+                            "max_change_rate": "0.010000000000000000",
+                            "max_rate": "0.200000000000000000",
+                            "rate": "0.100000000000000000"
+                        },
+                        "update_time": "2021-08-28T14:50:00.318422624Z"
+                    },
+                    "consensus_pubkey": {
+                        "@type": "/cosmos.crypto.ed25519.PubKey",
+                        "key": "rNrNp8w2FFT74TxmxwV1yvd3azw6SkuyDxMUdvcVAPM="
+                    },
+                    "delegator_shares": "40354535353.535353535353535353",
+                    "description": {
+                        "details": "Music for life!",
+                        "identity": "5791F22CCB7CD9A2",
+                        "moniker": "bitponder",
+                        "security_contact": "",
+                        "website": "https://bitponder.com"
+                    },
+                    "jailed": false,
+                    "min_self_delegation": "1",
+                    "operator_address": "bitsongvaloper1vgpsha4f8grmsqr6krfdxwpcf3x20h0qsxh5zh",
+                    "status": "BOND_STATUS_BONDED",
+                    "tokens": "39950990000",
+                    "unbonding_height": "0",
+                    "unbonding_time": "2021-10-12T06:36:35.469796426Z"
+                }
+            ]
+        },
+        "transfer": {
+            "denom_traces": [],
+            "params": {
+                "receive_enabled": false,
+                "send_enabled": false
+            },
+            "port_id": "transfer"
+        },
+        "upgrade": {}
+    },
+    "chain_id": "bitsong-testnet-6",
+    "consensus_params": {
+        "block": {
+            "max_bytes": "200000",
+            "max_gas": "2000000",
+            "time_iota_ms": "1000"
+        },
+        "evidence": {
+            "max_age_duration": "172800000000000",
+            "max_age_num_blocks": "100000"
+        },
+        "validator": {
+            "pub_key_types": [
+                "ed25519"
+            ]
+        },
+        "version": {}
+    },
+    "genesis_time": "2021-03-26T20:00:00Z",
+    "initial_height": "0",
+    "validators": [
+        {
+            "address": "AAD14426E33AADC5F7147A2BE4ADC244C4F58679",
+            "name": "bitponder",
+            "power": "39950",
+            "pub_key": {
+                "type": "tendermint/PubKeyEd25519",
+                "value": "rNrNp8w2FFT74TxmxwV1yvd3azw6SkuyDxMUdvcVAPM="
+            }
+        }
+    ]
+}
