@@ -2,8 +2,6 @@
 
 **WARNING: USE THESE INSTRUCTIONS ONLY ON A NEW MACHINE WHICH IS NOT THE ONE RELATED TO BITSONG MAINNET**
 
-**Currently it is highly NOT recommended to create a validator node and connect it to the testnet**
-
 ## Endpoints
 
 - Faucet - https://faucet.testnet.bitsong.network
