@@ -1,7 +1,7 @@
 {
   "genesis_time": "2021-12-16T11:38:53.284218881Z",
   "chain_id": "bigbang-test-2",
-  "initial_height": "2966151",
+  "initial_height": "1",
   "consensus_params": {
     "block": {
       "max_bytes": "20971520",
