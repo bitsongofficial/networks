@@ -61,7 +61,7 @@ Save your address and then request some token from faucet
 ### GET TOKEN FROM FAUCET
 
 ```bash
-curl -X POST -d '{"address": "bitsong1ljga25xfqfpdqx3h5v2zv8cax0nr6jdl95qga8"}' https://faucet.testnet.bitsong.network
+curl -X POST -d '{"address": "bitsong1dw9fdvrc46ed98rndpulem466t0zf0m2gt6zyk"}' https://faucet.testnet.bitsong.network
 ```
 
 ## Fantoken
@@ -69,9 +69,7 @@ curl -X POST -d '{"address": "bitsong1ljga25xfqfpdqx3h5v2zv8cax0nr6jdl95qga8"}' 
 ### Query fantoken params
 
 ```bash=
-bitsongd query fantoken params \
---node https://rpc.testnet.bitsong.network:443 \
---output json | jq
+bitsongd query fantoken params --node https://rpc.testnet.bitsong.network:443
 ```
 
 ### Issue a new fantoken
@@ -83,37 +81,33 @@ bitsongd tx fantoken issue \
 --max-supply "1000000000" \
 --issue-fee 1000000ubtsg \
 --description "The most popular fantoken" \
---chain-id bigbang-test-1 \
---from angelo \
+--chain-id bigbang-test-2 \
+--from user \
 -b block \
 --keyring-backend test \
 --node https://rpc.testnet.bitsong.network:443
 ```
 
-### Query fantoken by denom
-
-```bash=
-bitsongd query fantoken denom ftA6822861D4003A3D13C2A9D46680750130579AE9 \
---node https://rpc.testnet.bitsong.network:443 \
---output json | jq
-```
-
 ### Query fantoken by owner
 
 ```bash=
-bitsongd query fantoken owner bitsong1nzxmsks45e55d5edj4mcd08u8dycaxq5eplakw \
---node https://rpc.testnet.bitsong.network:443 \
---output json | jq
+bitsongd query fantoken owner bitsong1dw9fdvrc46ed98rndpulem466t0zf0m2gt6zyk --node https://rpc.testnet.bitsong.network:443
+```
+
+### Query fantoken by denom
+
+```bash=
+bitsongd query fantoken denom ft0011B9AE260F69D60438095F95F50AF9976015A9 --node https://rpc.testnet.bitsong.network:443
 ```
 
 ### Mint a fantoken
 
 ```bash=
-bitsongd tx fantoken mint ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
---recipient $(bitsongd keys show user1 -a --home ./data/localnet --keyring-backend test) \
+bitsongd tx fantoken mint ft0011B9AE260F69D60438095F95F50AF9976015A9 \
+--recipient <rcpt-address> \
 --amount 1000 \
---chain-id localnet \
---from user1 \
+--chain-id bigbang-test-2 \
+--from user \
 -b block \
 --keyring-backend test \
 --node https://rpc.testnet.bitsong.network:443
@@ -122,10 +116,10 @@ bitsongd tx fantoken mint ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
 ### Burn a fantoken
 
 ```bash=
-bitsongd tx fantoken burn ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
+bitsongd tx fantoken burn ft0011B9AE260F69D60438095F95F50AF9976015A9 \
 --amount 1 \
---chain-id localnet \
---from user1 \
+--chain-id bigbang-test-2 \
+--from user \
 -b block \
 --keyring-backend test \
 --node https://rpc.testnet.bitsong.network:443
@@ -136,9 +130,9 @@ bitsongd tx fantoken burn ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
 **ATTENTION**: If you edit your fantoken to `--mintable false` it will no longer be possible to make it **mintable**
 
 ```bash=
-bitsongd tx fantoken edit ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
+bitsongd tx fantoken edit ft0011B9AE260F69D60438095F95F50AF9976015A9 \
 --mintable true \
---chain-id localnet \
+--chain-id bigbang-test-2 \
 --from user1 \
 -b block \
 --keyring-backend test \
@@ -148,10 +142,10 @@ bitsongd tx fantoken edit ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
 ### Transfer the fantoken creator ownership
 
 ```bash=
-bitsongd tx fantoken transfer ft00CFD85F5B2EB9065E45D5CAD6FC9E74786D9708 \
---recipient $(bitsongd keys show user2 -a --home ./data/localnet --keyring-backend test) \
---chain-id localnet \
---from user1 \
+bitsongd tx fantoken transfer ft0011B9AE260F69D60438095F95F50AF9976015A9 \
+--recipient <rcpt-address> \
+--chain-id bigbang-test-2 \
+--from user \
 -b block \
 --keyring-backend test \
 --node https://rpc.testnet.bitsong.network:443
