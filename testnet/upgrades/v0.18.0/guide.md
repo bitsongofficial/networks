@@ -7,7 +7,7 @@
 
 
 
-The target block for this upgrade is `TBD`, which is expected to arrive at 3:00 UTC Tuesday, Oct 22nd [Go Playground](https://go.dev/play/p/)
+The target block for this upgrade is `TBD`, which is expected to arrive at TBD [Go Playground](https://go.dev/play/p/)
 
 ## Building Manually:
 
@@ -17,10 +17,9 @@ bitsongd version --long
 name: go-bitsong
 server_name: bitsongd
 client_name: bitsongcli
-version: 0.7.0
-commit: 26a277a67b8d3e0052ace21be7f3a2754171b06b
+version: 0.17.0
+commit: 6caaf5fdba8e7ce41e8a9d44654c141f85c9c38f
 build_tags: netgo,ledger
-go: go version go1.13.15 linux/amd64
 ```
 
 ### 2. Make sure your chain halts at the right block: `TBD`
@@ -37,14 +36,20 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
 **NOTE**: It is recommended for validators and operators to take a full data snapshot at the export height before proceeding in case the upgrade does not go as planned or if not enough voting power comes online in a sufficient and agreed upon amount of time. In such a case, the chain will fallback to continue operating `bitsong-1`.
 
 
-### 4. Install new Go-Bitsong binary
+### 4. Update Go
 
+```
+wget -q -O - https://git.io/vQhTU | bash -s -- --remove
+wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.22.2
+```
+
+### Install Go-Bitsong binary
 ```
 cd go-bitsong && git pull && git checkout v0.18.0
 make build && make install 
 ```
 
-### 5. Verify you are currently running the correct version (v0.8.0) of the `go-bitsong`:
+### 5. Verify you are currently running the correct version (v0.18.0) of the `go-bitsong`:
 ```
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 # commit: 
@@ -54,11 +59,11 @@ bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 ```
 ### Downloading Verified Build:
 ```sh
-rm -rf terpd_linux_amd64.tar.gz # delete if exists
-wget https://github.com/bitsongofficial/go-bitsong/releases/download/v0.18.0/bitsongd-linux-amd64.tar.gz
+rm -rf bitsongd_linux_amd64.tar.gz # delete if exists
+wget https://github.com/permissionlessweb/g o-bitsong/releases/download/v0.18.0/bitsongd-linux-amd64.tar
 sha256sum bitsongd-linux-amd64.tar.gz
-# Output  TBD  bitsongd-linux-amd64.tar.gz
-# Output  TBD  bitsongd-linux-arm64.tar.gz
+# Output  7c82e4ea00c94484366bae7fd6783a28414f22152513d1bac8f872242a35a37e  bitsongd-linux-amd64.tar.gz
+# Output  4c07bb4e63d8ef2db33ac7682b7f73f9cf59a96e36893df63a1056a026a2a41c  bitsongd-linux-arm64.tar.gz
 ```
 
 ### Using Cosmovisor 
