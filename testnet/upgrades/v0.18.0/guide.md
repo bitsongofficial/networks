@@ -3,33 +3,34 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
 | Upgrade Version | `v0.18.0`                                                     |
-| Upgrade Height  | `TBD`                                                    |
+| Upgrade Height  | `19818776`                                                    |
 
 
 
-The target block for this upgrade is `TBD`, which is expected to arrive at TBD [Go Playground](https://go.dev/play/p/)
+The target block for this upgrade is `19818776`, which is expected to arrive at TBD [Go Playground](https://go.dev/play/p/UmBiC53Bc51)
 
 ## Building Manually:
 
 ### 1. Verify that you are currently running the correct version (v0.17.0) of `bitsongd`:
-```
+
+```sh
 bitsongd version --long
-name: go-bitsong
-server_name: bitsongd
-client_name: bitsongcli
-version: 0.17.0
-commit: 6caaf5fdba8e7ce41e8a9d44654c141f85c9c38f
-build_tags: netgo,ledger
+# name: go-bitsong
+# server_name: bitsongd
+# client_name: bitsongcli
+# version: 0.17.0
+# commit: 6caaf5fdba8e7ce41e8a9d44654c141f85c9c38f
+# build_tags: netgo,ledger
 ```
 
-### 2. Make sure your chain halts at the right block: `TBD`
-```
-perl -i -pe 's/^halt-height =.*/halt-height = TBD/' ~/.bitsongd/config/app.toml
+### 2. Make sure your chain halts at the right block: `19818776`
+```sh
+perl -i -pe 's/^halt-height =.*/halt-height = 19818776/' ~/.bitsongd/config/app.toml
 ```
 then restart your node `systemctl restart bitsongd`
 
 ### 3. After the chain has halted, make a backup of your `.bitsongd` directory
-```
+```sh
 cp -Rf ~/.bitsongd ./bitsongd_backup
 ```
 
@@ -38,37 +39,61 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
 
 ### 4. Update Go
 
-```
+```sh
 wget -q -O - https://git.io/vQhTU | bash -s -- --remove
-wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.22.2
+wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.22.4
 ```
 
-### Install Go-Bitsong binary
-```
+### Option A: Install Go-Bitsong binary
+```sh
 cd go-bitsong && git pull && git checkout v0.18.0
 make build && make install 
 ```
 
 ### 5. Verify you are currently running the correct version (v0.18.0) of the `go-bitsong`:
-```
+```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 # commit: 
 # cosmos_sdk_version: v0.47.8
 # version: 0.18.0
-
-```
-### Downloading Verified Build:
-```sh
-rm -rf bitsongd_linux_amd64.tar.gz # delete if exists
-wget https://github.com/permissionlessweb/g o-bitsong/releases/download/v0.18.0/bitsongd-linux-amd64.tar
-sha256sum bitsongd-linux-amd64.tar.gz
-# Output  7c82e4ea00c94484366bae7fd6783a28414f22152513d1bac8f872242a35a37e  bitsongd-linux-amd64.tar.gz
-# Output  4c07bb4e63d8ef2db33ac7682b7f73f9cf59a96e36893df63a1056a026a2a41c  bitsongd-linux-arm64.tar.gz
 ```
 
-### Using Cosmovisor 
+### Option B: Downloading Verified Build:
 ```sh
-mkdir -P $DAEMON_HOME/cosmovisor/upgrades/v0_18_0/bin && mv build $DAEMON_HOME/cosmovisor/upgrades/v0_18_0/bin 
+# set target platform
+export PLATFORM_TARGET=amd64
+ # delete if exists
+rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
+# download 
+curl -L -o ~/bitsongd-linux-arm64.tar.gz https://github.com/permissionlessweb/go-bitsong/releases/download/v0.18.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
+# verify sha256sum 
+sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
+# Output  bf8206dfc7e5d6ad0686ecdf71b9ca07cf8b87e6c8832d449a72b0962065ae9c  bitsongd-linux-amd64.tar.gz
+# Output  c1cb03883badc8940d6c018add58b4cd29371633e1358d1d1f894e839d8d9e2f  bitsongd-linux-arm64.tar.gz
 
-$DAEMON_HOME/cosmovisor/upgrades/v0_18_0/bin/bitsongd version
+# decompress 
+tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
+
+## move binary to go bin path
+sudo mv build/bitsongd-linux-$PLATFORM_TARGET /usr/local/go/bitsongd
+
+## change file ownership, if nessesary 
+sudo chmod +x /usr/local/go/bitsongd
+
+## confirm binary executable works 
+bitsongd version --long 
+
+# build_tags: netgo,ledger
+# commit: 46832a4c9dc5b7e02db95cdac6b8a87794488cd6
+# cosmos_sdk_version: v0.47.8
+# go: go version go1.23.3 darwin/amd64
+# name: go-bitsong
+# server_name: bitsongd
+# version: 0.18.0-7-g46832a4
+```
+
+## Ensure Minimum Gas Config is set 
+```sh
+export DAEMON_HOME=$HOME/.bitsongd
+sed 's/^minimum-gas-prices = .*/minimum-gas-prices = "0.06969ubtsg"/' $DAEMON_HOME/config/app.toml > temp_file && mv temp_file $DAEMON_HOME/config/app.toml
 ```
