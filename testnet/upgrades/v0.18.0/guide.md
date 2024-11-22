@@ -7,7 +7,7 @@
 
 
 
-The target block for this upgrade is `19818776`, which is expected to arrive at TBD [Go Playground](https://go.dev/play/p/UmBiC53Bc51)
+The target block for this upgrade is `19818776`, which is expected to arrive at `11/29/2024` [Go Playground](https://go.dev/play/p/UmBiC53Bc51)
 
 ## Building Manually:
 
