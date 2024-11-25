@@ -65,11 +65,11 @@ export PLATFORM_TARGET=amd64
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
-curl -L -o ~/bitsongd-linux-arm64.tar.gz https://github.com/permissionlessweb/go-bitsong/releases/download/v0.18.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
+curl -L -o ~/bitsongd-linux-arm64.tar.gz https://github.com/permissionlessweb/go-bitsong/releases/download/v0.18.1/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output  bf8206dfc7e5d6ad0686ecdf71b9ca07cf8b87e6c8832d449a72b0962065ae9c  bitsongd-linux-amd64.tar.gz
-# Output  c1cb03883badc8940d6c018add58b4cd29371633e1358d1d1f894e839d8d9e2f  bitsongd-linux-arm64.tar.gz
+# Output  d8dd5c1d371153d983abe1ce4f41543de5f498a7397c79d81600adc0394d36cc  bitsongd-linux-amd64.tar.gz
+# Output  dbf2dbf5851c241a0fc4ea449878633996fb3b7433b7bc817984e504c0342d22  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -84,12 +84,12 @@ sudo chmod +x /usr/local/go/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: 46832a4c9dc5b7e02db95cdac6b8a87794488cd6
+# commit: cba10a529d1489b5a74b47b8dc5b8cc0fd92db39
 # cosmos_sdk_version: v0.47.8
-# go: go version go1.23.3 darwin/amd64
+# go: go version go1.23.3 darwin/<you-platform>
 # name: go-bitsong
 # server_name: bitsongd
-# version: 0.18.0-7-g46832a4
+# version: 0.18.1
 ```
 
 ## Ensure Minimum Gas Config is set 
