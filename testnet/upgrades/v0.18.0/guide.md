@@ -41,7 +41,7 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
 
 ```sh
 wget -q -O - https://git.io/vQhTU | bash -s -- --remove
-wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.22.4
+wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.22.9
 ```
 
 ### Option A: Install Go-Bitsong binary
@@ -53,7 +53,7 @@ make build && make install
 ### 5. Verify you are currently running the correct version (v0.18.0) of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: 
+# commit: 50b4082736a68cdde098cf36edd7c7a70d9fdae6
 # cosmos_sdk_version: v0.47.8
 # version: 0.18.0
 ```
@@ -65,11 +65,11 @@ export PLATFORM_TARGET=amd64
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
-curl -L -o ~/bitsongd-linux-arm64.tar.gz https://github.com/permissionlessweb/go-bitsong/releases/download/v0.18.1/bitsongd-linux-$PLATFORM_TARGET.tar.gz
+curl -L -o ~/bitsongd-linux-arm64.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.18.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output  d8dd5c1d371153d983abe1ce4f41543de5f498a7397c79d81600adc0394d36cc  bitsongd-linux-amd64.tar.gz
-# Output  dbf2dbf5851c241a0fc4ea449878633996fb3b7433b7bc817984e504c0342d22  bitsongd-linux-arm64.tar.gz
+# Output: d3d0da91a01c473351dc57b2ed357aa8ea378a51672eec87112501bc9a53add6  bitsongd-linux-amd64.tar.gz
+# Output: 1696cf491224603136c32bf747610c0863754f73502523347524d9f1ef5b687f  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -84,16 +84,16 @@ sudo chmod +x /usr/local/go/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: cba10a529d1489b5a74b47b8dc5b8cc0fd92db39
+# commit: 50b4082736a68cdde098cf36edd7c7a70d9fdae6
 # cosmos_sdk_version: v0.47.8
 # go: go version go1.23.3 darwin/<you-platform>
 # name: go-bitsong
 # server_name: bitsongd
-# version: 0.18.1
+# version: 0.18.0
 ```
 
 ## Ensure Minimum Gas Config is set 
 ```sh
 export DAEMON_HOME=$HOME/.bitsongd
-sed 's/^minimum-gas-prices = .*/minimum-gas-prices = "0.06969ubtsg"/' $DAEMON_HOME/config/app.toml > temp_file && mv temp_file $DAEMON_HOME/config/app.toml
+sed 's/^minimum-gas-prices = .*/minimum-gas-prices = "0.006969ubtsg"/' $DAEMON_HOME/config/app.toml > temp_file && mv temp_file $DAEMON_HOME/config/app.toml
 ```
