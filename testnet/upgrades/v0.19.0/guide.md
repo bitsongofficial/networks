@@ -3,7 +3,7 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
 | Upgrade Version | `v0.19.0`                                                     |
-| Upgrade Height  | `TBDF`                                                    |
+| Upgrade Height  | `TBD`                                                    |
 
 
 
@@ -37,7 +37,7 @@ cd go-bitsong && git pull && git checkout v0.19.0
 make build && make install 
 ```
 
-### 5. Verify you are currently running the correct version (v0.19.0) of the `go-bitsong`:
+### 5. Verify you are currently running the correct version `v0.19.0` of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 # commit: <TBD>
