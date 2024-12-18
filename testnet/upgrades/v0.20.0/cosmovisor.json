@@ -1,6 +1,0 @@
-{
-    "binaries": {
-        "linux/arm64": "https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.0/bitsongd-linux-arm64?checksum=sha256:",
-        "linux/amd64": "https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.0/bitsongd-linux-amd64?checksum=sha256:"
-    }
-}
