@@ -3,11 +3,11 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
 | Upgrade Version | `v0.20.0`                                                     |
-| Upgrade Height  | `TBD`                                                    |
+| Upgrade Height  | `20236037`                                                    |
 
 
 
-The target block for this upgrade is `TBD`, which is expected to arrive at `TBD` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/TBD)
+The target block for this upgrade is `20236037`, which is expected to arrive at `Dec 27th 2024, 08:00:56` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/20236037)
 
 ## Building Manually:
 
@@ -19,7 +19,7 @@ bitsongd version --long
 # server_name: bitsongd
 # client_name: bitsongcli
 # version: 0.19.0
-# commit: 6caaf5fdba8e7ce41e8a9d44654c141f85c9c38f
+# commit: 5960e1c90a3dce23ff950261cb720b53f2dfe70c
 # build_tags: netgo,ledger
 ```
 
