@@ -1,13 +1,12 @@
-# Go-Bitsong v0.18.0 - Babberitus
+# Go-Bitsong v0.20.2 - Retune
 |                 |                                                              |
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
-| Upgrade Version | `v0.20.0`                                                     |
+| Upgrade Version | `v0.20.2`                                             |
 | Upgrade Height  | `20236037`                                                    |
 
 
-
-The target block for this upgrade is `20236037`, which is expected to arrive at `Dec 27th 2024, 08:00:56` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/20236037)
+The target block for this upgrade is `20277056`, which is expected to arrive at `Dec 30th 2024, 06:10:38` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/20277056)
 
 ## Building Manually:
 
@@ -23,9 +22,9 @@ bitsongd version --long
 # build_tags: netgo,ledger
 ```
 
-### 2. Make sure your chain halts at the right block: `TBD`
+### 2. Make sure your chain halts at the right block: `20277056`
 ```sh
-perl -i -pe 's/^halt-height =.*/halt-height = TBD/' ~/.bitsongd/config/app.toml
+perl -i -pe 's/^halt-height =.*/halt-height = 20277056/' ~/.bitsongd/config/app.toml
 ```
 then restart your node `systemctl restart bitsongd`
 
@@ -39,16 +38,16 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
  
 ### Option A: Install Go-Bitsong binary
 ```sh
-cd go-bitsong && git pull && git checkout v0.20.0
+cd go-bitsong && git pull && git checkout v0.20.1-upgrade
 make build && make install 
 ```
 
-### 5. Verify you are currently running the correct version (v0.20.0) of the `go-bitsong`:
+### 5. Verify you are currently running the correct version (v0.20.2) of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 # commit: <TBD>
 # cosmos_sdk_version: v0.47.8
-# version: 0.20.0
+# version: 0.20.2
 ```
 
 ### Option B: Downloading Verified Build:
@@ -58,7 +57,7 @@ export PLATFORM_TARGET=amd64
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
-curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
+curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.2/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # Output: <TBD>  bitsongd-linux-amd64.tar.gz
@@ -79,5 +78,8 @@ bitsongd version --long
 # build_tags: netgo,ledger
 # commit: <TBD>
 # server_name: bitsongd
-# version: 0.20.0
+# version: v0.20.2
 ```
+
+### Optional Build Version 
+A version of go-bitsong that will print a file with the delegations claimed is available under the `v0.20.1-print` branch. Feel free to use this version during the upgrade.
