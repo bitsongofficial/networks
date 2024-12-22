@@ -3,7 +3,7 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
 | Upgrade Version | `v0.20.2`                                             |
-| Upgrade Height  | `20236037`                                                    |
+| Upgrade Height  | `20277056`                                                    |
 
 
 The target block for this upgrade is `20277056`, which is expected to arrive at `Dec 30th 2024, 06:10:38` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/20277056)
