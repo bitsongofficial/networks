@@ -38,7 +38,7 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
  
 ### Option A: Install Go-Bitsong binary
 ```sh
-cd go-bitsong && git pull && git checkout v0.20.1-upgrade
+cd go-bitsong && git pull && git checkout v0.20.2
 make build && make install 
 ```
 
@@ -46,7 +46,7 @@ make build && make install
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 # commit: <TBD>
-# cosmos_sdk_version: v0.47.8
+# cosmos_sdk_version: v0.47.15
 # version: 0.20.2
 ```
 
