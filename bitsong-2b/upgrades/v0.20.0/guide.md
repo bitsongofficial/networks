@@ -53,7 +53,7 @@ bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 ### Option B: Downloading Verified Build:
 ```sh
 # set target platform
-export PLATFORM_TARGET=amd64
+export PLATFORM_TARGET=amd64 #arm64
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
@@ -67,10 +67,10 @@ sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
 
 ## move binary to go bin path
-sudo mv build/bitsongd-linux-$PLATFORM_TARGET /usr/local/go/bitsongd
+sudo mv build/bitsongd-linux-$PLATFORM_TARGET $HOME/go/bin/bitsongd
 
 ## change file ownership, if nessesary 
-sudo chmod +x /usr/local/go/bitsongd
+sudo chmod +x $HOME/go/bin/bitsongd
 
 ## confirm binary executable works 
 bitsongd version --long 
@@ -78,7 +78,7 @@ bitsongd version --long
 # build_tags: netgo,ledger
 # commit: e49371a6876f650fc908ee376337606b2f57f3b5
 # server_name: bitsongd
-# version: v0.20.2
+# version:0.20.2
 ```
 
 ### Optional Build Version 
