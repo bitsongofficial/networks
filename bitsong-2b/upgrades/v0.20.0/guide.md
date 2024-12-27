@@ -45,7 +45,7 @@ make build && make install
 ### 5. Verify you are currently running the correct version (v0.20.2) of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: <TBD>
+# commit: e49371a6876f650fc908ee376337606b2f57f3b5
 # cosmos_sdk_version: v0.47.15
 # version: 0.20.2
 ```
@@ -60,8 +60,8 @@ rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.20.2/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: <TBD>  bitsongd-linux-amd64.tar.gz
-# Output: <TBD>  bitsongd-linux-arm64.tar.gz
+# Output: e41e999624164a643d1b17be991fa5a0682be9af5232746bd8715a78ead98619  bitsongd-linux-amd64.tar.gz
+# Output: 47bd2edd930fad101a0349b4a5e74986137d6524a6b1201d8c5055180204788a  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -76,7 +76,7 @@ sudo chmod +x /usr/local/go/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: <TBD>
+# commit: e49371a6876f650fc908ee376337606b2f57f3b5
 # server_name: bitsongd
 # version: v0.20.2
 ```
