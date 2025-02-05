@@ -3,10 +3,10 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                  |
 | Upgrade Version | `v0.21.0`                                             |
-| Upgrade Height  | `TBD`                                                    |
+| Upgrade Height  | `20960377`                                                    |
 
 
-The target block for this upgrade is `TBD`, which is expected to arrive at `Feb -th 2025, 06:10:38` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/TBD)
+The target block for this upgrade is `20960377`, which is expected to arrive at `Feb 13th 2025, 10:47:59+00:00` [Mintscan Countdown](https://www.mintscan.io/bitsong/block/20960377)
 
 ## Building Manually:
 
@@ -18,13 +18,13 @@ bitsongd version --long
 # server_name: bitsongd
 # client_name: bitsongcli
 # version: 0.20.4
-# commit:  
+# commit: bc3863e2203bcdcf573cccb523088e431102049f
 # build_tags: netgo,ledger
 ```
 
-### 2. Make sure your chain halts at the right block: `TBD`
+### 2. Make sure your chain halts at the right block: `20960377`
 ```sh
-perl -i -pe 's/^halt-height =.*/halt-height = TBD/' ~/.bitsongd/config/app.toml
+perl -i -pe 's/^halt-height =.*/halt-height = 20960377/' ~/.bitsongd/config/app.toml
 ```
 then restart your node `systemctl restart bitsongd`
 
@@ -45,7 +45,7 @@ make build && make install
 ### 5. Verify you are currently running the correct version (v0.20.2) of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: e49371a6876f650fc908ee376337606b2f57f3b5
+# commit: TBD
 # cosmos_sdk_version: v0.47.15
 # version: 0.21.0
 ```
@@ -60,8 +60,8 @@ rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.21.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: e41e999624164a643d1b17be991fa5a0682be9af5232746bd8715a78ead98619  bitsongd-linux-amd64.tar.gz
-# Output: 47bd2edd930fad101a0349b4a5e74986137d6524a6b1201d8c5055180204788a  bitsongd-linux-arm64.tar.gz
+# Output: TBD  bitsongd-linux-amd64.tar.gz
+# Output: TBD  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -76,7 +76,7 @@ sudo chmod +x $HOME/go/bin/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit:   
+# commit: TBD  
 # server_name: bitsongd
 # version:0.21.0
 ```
