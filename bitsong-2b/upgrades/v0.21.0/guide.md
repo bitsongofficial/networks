@@ -60,8 +60,8 @@ rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.21.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: a2cc9a36c18f2ace7691f80a54e2a64eca9bb9302395a2dcb8315aba465cd898  bitsongd-linux-amd64.tar.gz
-# Output: 8b7062b6912f92e9644fcfdb621945db18da4f58b5696fa1549e32a71088cfad  bitsongd-linux-arm64.tar.gz
+# Output: d852b90ee212dd98658444f3b9d208046fb02d709c59ec80bd1152e5d47c5366  bitsongd-linux-amd64.tar.gz
+# Output: f2f1efd66b976ac45e4e82e46b2549529f864dad8a8ced66d2e5725ad933ee55  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
