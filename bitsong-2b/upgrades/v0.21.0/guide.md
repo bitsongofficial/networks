@@ -42,12 +42,12 @@ cd go-bitsong && git pull && git checkout v0.21.0
 make build && make install 
 ```
 
-### 5. Verify you are currently running the correct version (v0.20.2) of the `go-bitsong`:
+### 5. Verify you are currently running the correct version (v0.20.5) of the `go-bitsong`:
 ```sh
 bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: TBD
+# commit: 3f17bd7a6ab2b097237c0d15f73d103319df0d79  
 # cosmos_sdk_version: v0.47.15
-# version: 0.21.0
+# version: 0.20.5
 ```
 
 ### Option B: Downloading Verified Build:
@@ -60,8 +60,8 @@ rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.21.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: d852b90ee212dd98658444f3b9d208046fb02d709c59ec80bd1152e5d47c5366  bitsongd-linux-amd64.tar.gz
-# Output: f2f1efd66b976ac45e4e82e46b2549529f864dad8a8ced66d2e5725ad933ee55  bitsongd-linux-arm64.tar.gz
+# Output: edcef92a51545e73f31d048482ebedee139cdf126f83a7a102334515ac2e93a8  bitsongd-linux-amd64.tar.gz
+# Output: 3822fa98ef99bd3fb1b7855227781da710f6e98a469b56ba4c3c2239d34d611f  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -76,7 +76,8 @@ sudo chmod +x $HOME/go/bin/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: TBD  
+# commit: 8928250570ebdd5504f27b5ff6869f5f683a7515  
+# name: go-bitsong
 # server_name: bitsongd
 # version:0.21.0
 ```
