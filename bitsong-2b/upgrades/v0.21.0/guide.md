@@ -54,6 +54,7 @@ bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
 ```sh
 # set target platform
 export PLATFORM_TARGET=amd64 #arm64
+
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
@@ -68,6 +69,9 @@ tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz
 
 ## move binary to go bin path
 sudo mv build/bitsongd-linux-$PLATFORM_TARGET $HOME/go/bin/bitsongd
+
+## set correct libsodium
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/path/to/libwasmvm.x86_64.so"
 
 ## change file ownership, if nessesary 
 sudo chmod +x $HOME/go/bin/bitsongd
