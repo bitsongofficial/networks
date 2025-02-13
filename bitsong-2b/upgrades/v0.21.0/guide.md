@@ -17,8 +17,8 @@ bitsongd version --long
 # name: go-bitsong
 # server_name: bitsongd
 # client_name: bitsongcli
-# version: 0.20.4
-# commit: bc3863e2203bcdcf573cccb523088e431102049f
+# version: 0.20.5
+# commit: 3f17bd7a6ab2b097237c0d15f73d103319df0d79
 # build_tags: netgo,ledger
 ```
 
