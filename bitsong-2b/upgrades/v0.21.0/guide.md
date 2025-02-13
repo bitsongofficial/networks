@@ -57,11 +57,11 @@ export PLATFORM_TARGET=amd64 #arm64
  # delete if exists
 rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 # download 
-curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.21.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
+curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.21.1/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: edcef92a51545e73f31d048482ebedee139cdf126f83a7a102334515ac2e93a8  bitsongd-linux-amd64.tar.gz
-# Output: 3822fa98ef99bd3fb1b7855227781da710f6e98a469b56ba4c3c2239d34d611f  bitsongd-linux-arm64.tar.gz
+# Output: abb9c781413e1c7ac396a7d53c46057b99e9d041db36fc5bd61ee848c317c2b5  bitsongd-linux-amd64.tar.gz
+# Output: b643dd91511e2a291d4e929112522b8e04d1dcda8185fc9290694defead69e31  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -76,9 +76,9 @@ sudo chmod +x $HOME/go/bin/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: 8928250570ebdd5504f27b5ff6869f5f683a7515  
+# commit: f18e2ae96e671398f98068224ee75ce15a5e5cb3  
 # name: go-bitsong
 # server_name: bitsongd
-# version:0.21.0
+# version:0.21.1
 ```
  
