@@ -4,12 +4,16 @@ This repository contains the official genesis file for current and historical [B
 
 ## Latest Mainnet
 
-Chain ID: [bitsong-1](bitsong-1/README.md)  
-
-## Upcoming Mainnet
-Chain ID: [bitsong-2](bitsong-2/README.md)  
-Upgrade: [Instructions](bitsong-2/UPGRADE.md)  
-
+| Chain-id  | Status  |   |   |   |
+|---|---|---|---|---|
+| [bitsong-2b](bitsong-2b/README.md)    | LIVE  |   |   |   |
+| [bitsong-1](bitsong-1/README.md)    | ARCHIVED  |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+ 
 ## Latest Testnet
-
------
+| Chain-id  | Status  |   |   |   |
+|---|---|---|---|---|
+| [sub-1](bitsong-2b/README.md)    | UPCOMING  |   |   |   
+|   |   |   |   |   |
+|   |   |   |   |   |
