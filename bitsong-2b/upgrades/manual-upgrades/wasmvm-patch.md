@@ -1,5 +1,12 @@
 # `v0.21.4` - WasmVM Patch & Temp Dir Bug Resolution
 
+
+|    |   |   |   |   |
+|---|---|---|---|---|
+| HALT HEIGHT  |    [`21051500`](https://www.mintscan.io/bitsong/block/21051500)  |   |   |   |
+| HALT DATE (UTC)  | **Feb 19th 2025, `15:38:21+00:00`**   |   |   |   |
+| Go-Bitsong Version  | [`v0.21.4`](https://github.com/bitsongofficial/go-bitsong/releases/tag/v0.21.4)   |   |   |   |
+
 ## Reasoning
 
 ### A. Wasm data directory migration
