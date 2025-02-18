@@ -59,7 +59,7 @@ First step in correcting the wasm data directory location, we remove any data th
 ## Step 3: Copy existing wasm data to correct path
 The next step is to move the wasm data into the directory location our VM expects it to be.
 ```sh
-cp -R $HOME/.bitsongd/data/wasm '$HOME/.bitsongd/wasm
+cp -R $HOME/.bitsongd/data/wasm $HOME/.bitsongd/wasm
 ```
 
 ## Step 4: Remove Redundant Wasm Data Dir
