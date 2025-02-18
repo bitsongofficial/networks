@@ -25,6 +25,30 @@ First, stop your node so that the halt height we are setting is applied to the r
 systemctl stop bitsongd.service 
 # pkill -f bitsongd
 ```
+
+ 
+#### NOTE: _If you are using a systemd process file, ensure you set Restart=no in your `bitsongd.service` file, or else your  node will not stop and the halt height will not be applied._
+```
+sudo tee /etc/systemd/system/bitsongd.service > /dev/null << EOF
+[Unit]
+Description=BitSong Network Daemon
+After=network-online.target
+[Service]
+User=$USER
+
+ExecStart=$(which bitsongd) start
+Restart=no
+RestartSec=3
+LimitNOFILE=4096
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+And then reload the daemon:
+```sh 
+systemctl daemon-reload
+```
+
 Now, set the halt height in your nodes `app.toml`:
 ```sh
 perl -i -pe 's/^halt-height =.*/halt-height = 21051500/' ~/.bitsongd/config/app.toml
