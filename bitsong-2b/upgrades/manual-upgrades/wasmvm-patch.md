@@ -21,11 +21,6 @@ By coordinating an halt height of `21051500`, updating nodes to the latest versi
 
 ## Step 0: Set Halt Height
 First, stop your node so that the halt height we are setting is applied to the runtime.
-```sh
-systemctl stop bitsongd.service 
-# pkill -f bitsongd
-```
-
  
 #### NOTE: _If you are using a systemd process file, ensure you set Restart=no in your `bitsongd.service` file, or else your  node will not stop and the halt height will not be applied._
 ```
@@ -49,7 +44,13 @@ And then reload the daemon:
 systemctl daemon-reload
 ```
 
-Now, set the halt height in your nodes `app.toml`:
+Now, you can stop your node service gracefully:
+```sh
+systemctl stop bitsongd.service 
+# pkill -f bitsongd
+```
+
+Then, set the halt height in your nodes `app.toml`:
 ```sh
 perl -i -pe 's/^halt-height =.*/halt-height = 21051500/' ~/.bitsongd/config/app.toml
 ```
