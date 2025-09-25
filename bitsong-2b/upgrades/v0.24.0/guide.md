@@ -57,7 +57,7 @@ sudo -S systemctl daemon-reload
 sudo systemctl start bitsongd
 ```
 
-Cosmovisor will now perform the pre-upgrade scripts one reaching the coordinated halt height & prior to installing and resuming with the latest go-btisong version.
+Cosmovisor will now perform the pre-upgrade scripts once reaching the coordinated halt height & prior to installing and resuming with the latest go-btisong version.
 
 ### C. WITH CUSTOM COSMOVISOR: Fully-Automatic Upgrade Via Custom Cosmovisor
 >
