@@ -4,9 +4,9 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                 |
 | Upgrade Version | [`v0.24.0`](https://github.com/bitsongofficial/go-bitsong/pull/292) |
-| Upgrade Height  | [`24505565`](https://explorer.chainroot.io/bitsong/blocks/24505565) |
+| Upgrade Height  | [`24505565`](https://explorer.chainroot.io/bitsong/blocks/24784361) |
 
-The target block for this upgrade is `24505565`, which is expected to arrive at `Thu, Oct 02 2025, 15:00:00 UTC` [Go Playground](https://go.dev/play/p/yJ0GTwJgarU)
+The target block for this upgrade is `24784361`, which is expected to arrive at `Mon, Oct 20 2025` [Go Playground](https://go.dev/play/p/c3Y6Cy_BrIc)
 
 ## PRE-UPGRADE-SCRIPT
 
@@ -129,6 +129,8 @@ sudo systemctl start bitsongd
 ```
 
 Now, when cosmovisor recieves an upgrade plan, it will download & prepare the pre-upgrade script, if it exists, automatically.
+
+> We have full e2e test for each method, located in the latest release. Its recommended to test the upgrade workflow you choose manually before voting on the proposal: <https://github.com/permissionlessweb/go-bitsong/tree/main/tests/bsh/upgrade>
 
 ## Building Manually
 
