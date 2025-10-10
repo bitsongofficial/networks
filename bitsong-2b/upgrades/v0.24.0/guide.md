@@ -4,7 +4,7 @@
 |-----------------|--------------------------------------------------------------|
 | Chain-id        | `bitsong-2b`                                                 |
 | Upgrade Version | [`v0.24.0`](https://github.com/bitsongofficial/go-bitsong/pull/292) |
-| Upgrade Height  | [`24505565`](https://explorer.chainroot.io/bitsong/blocks/24784361) |
+| Upgrade Height  | [`24784361`](https://explorer.chainroot.io/bitsong/blocks/24784361) |
 
 The target block for this upgrade is `24784361`, which is expected to arrive at `Mon, Oct 20 2025` [Go Playground](https://go.dev/play/p/c3Y6Cy_BrIc)
 
