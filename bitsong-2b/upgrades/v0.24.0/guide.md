@@ -61,9 +61,9 @@ Cosmovisor will now perform the pre-upgrade scripts once reaching the coordinate
 
 ### C. WITH CUSTOM COSMOVISOR: Fully-Automatic Upgrade Via Custom Cosmovisor
 >
-> If you would like to completely automate the pre-upgrade script, **we have released a version of cosmovisor** that will download any preUpgradeScript defined in the UpgradeInfo embedded in our upgrade proposal. You can review the modifications made [here](https://github.com/permissionlessweb/cosmos-sdk/compare/648633cc6d1eac408c87ad892f237cebd1ecc549...af61af47e79fd807559ec3148f5a0bea8ea749e9).
+> If you would like to completely automate the pre-upgrade script, **we have released a version of cosmovisor** that will download any preUpgradeScript defined in the UpgradeInfo embedded in our upgrade proposal. You can review the [modifications made here](https://github.com/cosmos/cosmos-sdk/compare/main...permissionlessweb:cosmos-sdk:feat/cosmovisor-preupgradescript).
 
-**If you ARE already running cosmovisor**, before reaching the coordinated upgrade height:
+**If you ARE already running cosmovisor**, before reaching the coordinated upgrade height, you will need to install our custom version:
 
 ```sh
 # kill existing cosmovisor process
@@ -72,6 +72,7 @@ systemctl stop bitsongd.service
 git clone -b feat/cosmovisor-preupgradescript https://github.com/permissionlessweb/cosmos-sdk cv-cosmos-sdk
 cd cv-cosmos-sdk/tools/cosmovisor || exit
 make cosmovisor
+# move new build into go binaries path (requires sudo)
 sudo mv cosmovisor /usr/local/bin/
 # resume cosmovisor process
 sudo -S systemctl daemon-reload
@@ -145,10 +146,10 @@ bitsongd version --long
 # build_tags: netgo,ledger
 ```
 
-### 2. Make sure your chain halts at the right block: `24505565`
+### 2. Make sure your chain halts at the right block: `24784361`
 
 ```sh
-perl -i -pe 's/^halt-height =.*/halt-height = 24505565/' ~/.bitsongd/config/app.toml
+perl -i -pe 's/^halt-height =.*/halt-height = 24784361/' ~/.bitsongd/config/app.toml
 ```
 
 then restart your node `systemctl restart bitsongd`
@@ -165,7 +166,7 @@ cp -Rf ~/.bitsongd ./bitsongd_backup
 ### Option A: Install Go-Bitsong binary
 
 ```sh
-git clone https://github.com/bitsongofficial/go-bitsong
+git clone https://github.com/permissionlessweb/go-bitsong
 cd go-bitsong && git pull && git checkout v0.24.0
 make install 
 ```
@@ -173,10 +174,10 @@ make install
 ### 5. Verify you are currently running the correct version (v0.24.0) of the `go-bitsong`
 
 ```sh
-bitsongd version --long | grep "cosmos_sdk_veresion/|commit\|version:"
-# commit: TBD
+bitsongd version --long | grep -E "cosmos_sdk_version|commit:|version:"
+# commit: 920cf3531727e23c4a45fba80dbec49b7bc70db9
 # cosmos_sdk_version: v0.53.4
-# version: v0.24.0
+# version: 0.24.0
 ```
 
 ### Option B: Downloading Verified Build
@@ -190,8 +191,8 @@ rm -rf bitsongd_linux_$PLATFORM_TARGET.tar.gz
 curl -L -o ~/bitsongd-linux-$PLATFORM_TARGET.tar.gz https://github.com/bitsongofficial/go-bitsong/releases/download/v0.24.0/bitsongd-linux-$PLATFORM_TARGET.tar.gz
 # verify sha256sum 
 sha256sum bitsongd-linux-$PLATFORM_TARGET.tar.gz
-# Output: TBD  bitsongd-linux-amd64.tar.gz
-# Output: TBD  bitsongd-linux-arm64.tar.gz
+# Output: c7fb19fc3cc45549b32c5e2b6b6b36c185ea4d12ed9ec6ce92089ce3a056abfe  bitsongd-linux-amd64.tar.gz
+# Output: 9f7a872e394788f460709a491bf253a092aa3c60f8ddd06848ae20266bbeb00c  bitsongd-linux-arm64.tar.gz
 
 # decompress 
 tar -xvzf bitsongd-linux-$PLATFORM_TARGET.tar.gz 
@@ -206,7 +207,7 @@ sudo chmod +x $HOME/go/bin/bitsongd
 bitsongd version --long 
 
 # build_tags: netgo,ledger
-# commit: TBD
+# commit: 920cf3531727e23c4a45fba80dbec49b7bc70db9
 # server_name: bitsongd
 # version: v0.24.0
 ```

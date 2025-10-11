@@ -1,8 +1,7 @@
 {
     "binaries": {
-       "linux/arm64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.24.0/bitsongd-linux-arm64?checksum=sha256:TBD",
-       "darwin/arm64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.24.0/bitsongd-linux-arm64?checksum=sha256:294bb5d8b0672ec0209030558e774f49f31cbcc34fd89263c864cd3eaccaa946",
-       "linux/amd64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.24.0/bitsongd-linux-amd64?checksum=sha256:TBD"
+       "linux/arm64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.24.0/bitsongd-linux-arm64?checksum=sha256:da09272cbdb6ab379edca3507bd4dba875e56ec1c8cdc09d4d26c624dec097cb",
+       "linux/amd64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.24.0/bitsongd-linux-amd64?checksum=sha256:a839eb5c7eda761e4f7e80948ebaa9a3bfcc05f616846cd07ad1d53f50868163"
     },
     "pre_upgrade_script": "https://raw.githubusercontent.com/permissionlessweb/networks/refs/heads/master/bitsong-2b/upgrades/v0.24.0/preUpgradeScript.sh?checksum=sha256:f4e88c199864094ae025e0ce3b8bd9ff0b5e648bfe00acd80e4062ef6d3d5d0b"
 }
