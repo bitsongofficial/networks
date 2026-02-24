@@ -28,7 +28,7 @@ if [ "$MODE" = "genesis" ]; then
         # Init chain
         cat "$ACCOUNTS_DIR/validator.txt" | bitsongd init "$VAL_NAME" \
             --chain-id "$CHAIN_ID" \
-            --default-denom ubtsg \
+            --default-denom utbtsg \
             --recover \
             --home "$HOME_DIR"
 
@@ -44,16 +44,16 @@ if [ "$MODE" = "genesis" ]; then
             --home "$HOME_DIR"
 
         # Add genesis accounts
-        bitsongd genesis add-genesis-account "$VAL_NAME" 100000000000000ubtsg \
+        bitsongd genesis add-genesis-account "$VAL_NAME" 100000000000000utbtsg \
             --keyring-backend test \
             --home "$HOME_DIR"
 
-        bitsongd genesis add-genesis-account faucet 100000000000000ubtsg \
+        bitsongd genesis add-genesis-account faucet 100000000000000utbtsg \
             --keyring-backend test \
             --home "$HOME_DIR"
 
         # Create gentx
-        bitsongd genesis gentx "$VAL_NAME" 1000000000000ubtsg \
+        bitsongd genesis gentx "$VAL_NAME" 10000000000000utbtsg \
             --keyring-backend test \
             --home "$HOME_DIR" \
             --chain-id "$CHAIN_ID"
@@ -64,22 +64,22 @@ if [ "$MODE" = "genesis" ]; then
         # Apply genesis parameters
         GENESIS="$HOME_DIR/config/genesis.json"
         jq '
-          .app_state.crisis.constant_fee.denom = "ubtsg" |
-          .app_state.fantoken.params.issue_fee.denom = "ubtsg" |
+          .app_state.crisis.constant_fee.denom = "utbtsg" |
+          .app_state.fantoken.params.issue_fee.denom = "utbtsg" |
           .app_state.fantoken.params.issue_fee.amount = "0" |
-          .app_state.fantoken.params.mint_fee.denom = "ubtsg" |
-          .app_state.fantoken.params.burn_fee.denom = "ubtsg" |
-          .app_state.gov.params.min_deposit[0].denom = "ubtsg" |
+          .app_state.fantoken.params.mint_fee.denom = "utbtsg" |
+          .app_state.fantoken.params.burn_fee.denom = "utbtsg" |
+          .app_state.gov.params.min_deposit[0].denom = "utbtsg" |
           .app_state.gov.params.max_deposit_period = "600s" |
           .app_state.gov.params.voting_period = "900s" |
           .app_state.gov.params.expedited_voting_period = "300s" |
-          .app_state.gov.params.expedited_min_deposit[0].denom = "ubtsg" |
+          .app_state.gov.params.expedited_min_deposit[0].denom = "utbtsg" |
           .app_state.mint.minter.inflation = "0.001000000000000000" |
-          .app_state.mint.params.mint_denom = "ubtsg" |
-          .app_state.protocolpool.params.enabled_distribution_denoms = ["ubtsg"] |
+          .app_state.mint.params.mint_denom = "utbtsg" |
+          .app_state.protocolpool.params.enabled_distribution_denoms = ["utbtsg"] |
           .app_state.staking.params.unbonding_time = "14400s" |
           .app_state.staking.params.max_validators = 10 |
-          .app_state.staking.params.bond_denom = "ubtsg" |
+          .app_state.staking.params.bond_denom = "utbtsg" |
           .app_state.slashing.params.signed_blocks_window = "10000" |
           .app_state.slashing.params.downtime_jail_duration = "6000s" |
           .app_state.wasm.params.code_upload_access.permission = "Everybody" |
@@ -102,9 +102,11 @@ if [ "$MODE" = "genesis" ]; then
         sed -i 's|laddr = "tcp://127.0.0.1:26657"|laddr = "tcp://0.0.0.0:26657"|' "$config"
         sed -i 's/cors_allowed_origins = \[\]/cors_allowed_origins = ["*"]/' "$config"
         sed -i '/^\[api\]/,/^\[/{s/^enable = false/enable = true/}' "$app_toml"
+        sed -i '/^\[api\]/,/^\[/{s|^address = "tcp://localhost:1317"|address = "tcp://0.0.0.0:1317"|}' "$app_toml"
         sed -i 's/^swagger = false/swagger = true/' "$app_toml"
         sed -i 's/^enabled-unsafe-cors = false/enabled-unsafe-cors = true/' "$app_toml"
-        sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0ubtsg"/' "$app_toml"
+        sed -i '/^\[grpc\]/,/^\[/{s|^address = "localhost:9090"|address = "0.0.0.0:9090"|}' "$app_toml"
+        sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0utbtsg"/' "$app_toml"
 
         echo "Setup complete."
     fi
@@ -128,7 +130,7 @@ elif [ "$MODE" = "join" ]; then
         # Init chain (creates config structure)
         cat "$ACCOUNTS_DIR/validator.txt" | bitsongd init "$VAL_NAME" \
             --chain-id "$CHAIN_ID" \
-            --default-denom ubtsg \
+            --default-denom utbtsg \
             --recover \
             --home "$HOME_DIR"
 
@@ -154,9 +156,11 @@ elif [ "$MODE" = "join" ]; then
         sed -i 's|laddr = "tcp://127.0.0.1:26657"|laddr = "tcp://0.0.0.0:26657"|' "$config"
         sed -i 's/cors_allowed_origins = \[\]/cors_allowed_origins = ["*"]/' "$config"
         sed -i '/^\[api\]/,/^\[/{s/^enable = false/enable = true/}' "$app_toml"
+        sed -i '/^\[api\]/,/^\[/{s|^address = "tcp://localhost:1317"|address = "tcp://0.0.0.0:1317"|}' "$app_toml"
         sed -i 's/^swagger = false/swagger = true/' "$app_toml"
         sed -i 's/^enabled-unsafe-cors = false/enabled-unsafe-cors = true/' "$app_toml"
-        sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0ubtsg"/' "$app_toml"
+        sed -i '/^\[grpc\]/,/^\[/{s|^address = "localhost:9090"|address = "0.0.0.0:9090"|}' "$app_toml"
+        sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0utbtsg"/' "$app_toml"
 
         echo "Join setup complete."
     fi

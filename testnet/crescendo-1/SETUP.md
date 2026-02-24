@@ -15,7 +15,7 @@ $BINARY keys mnemonic > accounts/faucet.txt
 ```bash
 cat accounts/validator.txt | $BINARY init $VAL_NAME \
     --chain-id $CHAIN_ID \
-    --default-denom ubtsg \
+    --default-denom utbtsg \
     --recover \
     --home $HOME
 ```
@@ -37,11 +37,11 @@ cat accounts/faucet.txt | $BINARY keys add faucet \
 ## Add genesis accounts
 
 ```bash
-$BINARY genesis add-genesis-account $VAL_NAME 100000000000000ubtsg \
+$BINARY genesis add-genesis-account $VAL_NAME 100000000000000utbtsg \
     --keyring-backend test \
     --home $HOME
 
-$BINARY genesis add-genesis-account faucet 100000000000000ubtsg \
+$BINARY genesis add-genesis-account faucet 100000000000000utbtsg \
     --keyring-backend test \
     --home $HOME
 ```
@@ -49,7 +49,7 @@ $BINARY genesis add-genesis-account faucet 100000000000000ubtsg \
 ## Create the gentx for the validator
 
 ```bash
-$BINARY genesis gentx $VAL_NAME 1000000000000ubtsg \
+$BINARY genesis gentx $VAL_NAME 1000000000000utbtsg \
     --keyring-backend test \
     --home $HOME \
     --chain-id $CHAIN_ID
@@ -83,7 +83,7 @@ sed -i 's/cors_allowed_origins = \[\]/cors_allowed_origins = ["*"]/' "$config"
 sed -i '/^\[api\]/,/^\[/{s/^enable = false/enable = true/}' "$app_toml"
 sed -i 's/^swagger = false/swagger = true/' "$app_toml"
 sed -i 's/^enabled-unsafe-cors = false/enabled-unsafe-cors = true/' "$app_toml"
-sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0ubtsg"/' "$app_toml"
+sed -i 's/^minimum-gas-prices = ".*"/minimum-gas-prices = "0utbtsg"/' "$app_toml"
 ```
 
 ## Start the chain

@@ -16,6 +16,10 @@ services:
       - "1317:1317"
       - "9090:9090"
     volumes:
-      - ./.data:/bitsongd/.data
-      - ./accounts:/accounts
-      - ./entrypoint.sh:/entrypoint.sh:ro
+      - bitsongd-data:/bitsongd/.data
+      - bitsongd-accounts:/accounts
+      - ../files/entrypoint.sh:/entrypoint.sh:ro
+
+volumes:
+  bitsongd-data:
+  bitsongd-accounts:

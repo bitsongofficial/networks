@@ -1,3 +1,5 @@
-testnet/crescendo-1/.data
+.data
+.env
+.dokploy
+
 testnet/crescendo-1/accounts
-testnet/crescendo-1/.env
