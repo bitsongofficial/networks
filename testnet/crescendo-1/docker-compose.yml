@@ -18,7 +18,7 @@ services:
     volumes:
       - bitsongd-data:/bitsongd/.data
       - bitsongd-accounts:/accounts
-      - ../files/entrypoint.sh:/entrypoint.sh:ro
+      - ./entrypoint.sh:/entrypoint.sh:ro
 
 volumes:
   bitsongd-data:

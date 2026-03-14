@@ -1,7 +1,7 @@
 {
   "app_name": "bitsongd",
   "app_version": "feat-hyperlane-6ef6074e5d97f6e1056e7b070bb3dcc1af125a67",
-  "genesis_time": "2026-02-24T10:52:41.297965111Z",
+  "genesis_time": "2026-03-12T13:55:58.978976248Z",
   "chain_id": "crescendo-1",
   "initial_height": 1,
   "app_hash": null,
@@ -21,14 +21,14 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bitsong1hnqvz7wasvu7khvvudw50fw5ue44a6xhht03eu",
+          "address": "bitsong14d23ug7a5eh45069nxuu2ejn95lql8kha95mrk",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bitsong164y8xw5688lp2ze4rfpxasl2jpnx26te2na3yx",
+          "address": "bitsong19mzgfkh8x9534cqevtn2ekazzndfzuya6v0lk2",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
@@ -45,7 +45,7 @@
       },
       "balances": [
         {
-          "address": "bitsong1hnqvz7wasvu7khvvudw50fw5ue44a6xhht03eu",
+          "address": "bitsong19mzgfkh8x9534cqevtn2ekazzndfzuya6v0lk2",
           "coins": [
             {
               "denom": "utbtsg",
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "address": "bitsong164y8xw5688lp2ze4rfpxasl2jpnx26te2na3yx",
+          "address": "bitsong14d23ug7a5eh45069nxuu2ejn95lql8kha95mrk",
           "coins": [
             {
               "denom": "utbtsg",
@@ -150,10 +150,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "bitsongvaloper1hnqvz7wasvu7khvvudw50fw5ue44a6xhk0ncfp",
+                "validator_address": "bitsongvaloper14d23ug7a5eh45069nxuu2ejn95lql8khupgjnt",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "T3RnZaI1QnaYXxbIOXVqVlB34X9hXCuTQlKk77GcoTc="
+                  "key": "BUXJR8rN1e++WR5OHHz0V3ClU0BlmkJ5URuc6Ok8a4o="
                 },
                 "value": {
                   "denom": "utbtsg",
@@ -161,7 +161,7 @@
                 }
               }
             ],
-            "memo": "2b0d8022183519f2423e8f83230a6ed35e1e2bc9@10.0.1.71:26656",
+            "memo": "f306dd08a8f7badb2efd58ee93be5f52075d287a@172.18.0.2:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -173,7 +173,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Amz2zJbNR8xZaRPaDn/NBO7NaPNH3z3D5u51tG2Vtv7a"
+                  "key": "AwkAyGssyMakI24hAP3Olf40a1coB5R00A2ckcVB7Wtd"
                 },
                 "mode_info": {
                   "single": {
@@ -192,7 +192,7 @@
             "tip": null
           },
           "signatures": [
-            "4tafInhsYkP9loxYLO6c7wwlhuhm8ri0dULSBk+AGfBSA/nXbYNLIft0LvBmr46DoHX9qxFX1vLh0UkF4n3Q6Q=="
+            "gButd9kZ61x1N99lAnTc32cIxRceYLr/1fkTa8wFk4d2D7TQk00zo8SvQWdio+8xdXwbZ6tPe0Ae2KS5IGEBBQ=="
           ]
         }
       ]
