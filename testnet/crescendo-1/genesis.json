@@ -1,7 +1,7 @@
 {
   "app_name": "bitsongd",
   "app_version": "feat-hyperlane-6ef6074e5d97f6e1056e7b070bb3dcc1af125a67",
-  "genesis_time": "2026-03-12T13:55:58.978976248Z",
+  "genesis_time": "2026-03-18T15:39:30.90668629Z",
   "chain_id": "crescendo-1",
   "initial_height": 1,
   "app_hash": null,
@@ -21,14 +21,14 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bitsong14d23ug7a5eh45069nxuu2ejn95lql8kha95mrk",
+          "address": "bitsong1s82zu3kt5493ynu7h2pqg923mwuqnek37l3urj",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bitsong19mzgfkh8x9534cqevtn2ekazzndfzuya6v0lk2",
+          "address": "bitsong17py7w2szu089nwwf86gh3en230jkyuscg7mxzn",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
@@ -45,7 +45,7 @@
       },
       "balances": [
         {
-          "address": "bitsong19mzgfkh8x9534cqevtn2ekazzndfzuya6v0lk2",
+          "address": "bitsong1s82zu3kt5493ynu7h2pqg923mwuqnek37l3urj",
           "coins": [
             {
               "denom": "utbtsg",
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "address": "bitsong14d23ug7a5eh45069nxuu2ejn95lql8kha95mrk",
+          "address": "bitsong17py7w2szu089nwwf86gh3en230jkyuscg7mxzn",
           "coins": [
             {
               "denom": "utbtsg",
@@ -113,7 +113,7 @@
       "params": {
         "issue_fee": {
           "denom": "utbtsg",
-          "amount": "1000000000"
+          "amount": "0"
         },
         "mint_fee": {
           "denom": "utbtsg",
@@ -150,10 +150,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "bitsongvaloper14d23ug7a5eh45069nxuu2ejn95lql8khupgjnt",
+                "validator_address": "bitsongvaloper1s82zu3kt5493ynu7h2pqg923mwuqnek3lmd4n0",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "BUXJR8rN1e++WR5OHHz0V3ClU0BlmkJ5URuc6Ok8a4o="
+                  "key": "c/CYHWjF3poQ8M3t3Zf6fBLaQk/W6D3qAcISRDAZVSk="
                 },
                 "value": {
                   "denom": "utbtsg",
@@ -161,7 +161,7 @@
                 }
               }
             ],
-            "memo": "f306dd08a8f7badb2efd58ee93be5f52075d287a@172.18.0.2:26656",
+            "memo": "83004624e56c4569036d47dbe1edb038d2b41e15@172.18.0.2:26656",
             "timeout_height": "0",
             "unordered": false,
             "timeout_timestamp": null,
@@ -173,7 +173,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AwkAyGssyMakI24hAP3Olf40a1coB5R00A2ckcVB7Wtd"
+                  "key": "At2yoCGyhYtlDx3wt/LXdj8RwK8KTYw3sZGBAHkJY1ei"
                 },
                 "mode_info": {
                   "single": {
@@ -192,7 +192,7 @@
             "tip": null
           },
           "signatures": [
-            "gButd9kZ61x1N99lAnTc32cIxRceYLr/1fkTa8wFk4d2D7TQk00zo8SvQWdio+8xdXwbZ6tPe0Ae2KS5IGEBBQ=="
+            "917gt/C+A7a+mtm5EzCqGTFujaz5n1AdtlqENr83coxwkEo4tt1xhUt5wTN7LIS7+sVRVPQ4ct2SZg7l05KDaA=="
           ]
         }
       ]
@@ -212,15 +212,15 @@
             "amount": "10000000"
           }
         ],
-        "max_deposit_period": "172800s",
-        "voting_period": "172800s",
+        "max_deposit_period": "600s",
+        "voting_period": "900s",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
         "min_initial_deposit_ratio": "0.000000000000000000",
         "proposal_cancel_ratio": "0.500000000000000000",
         "proposal_cancel_dest": "",
-        "expedited_voting_period": "86400s",
+        "expedited_voting_period": "300s",
         "expedited_threshold": "0.667000000000000000",
         "expedited_min_deposit": [
           {
@@ -303,7 +303,7 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.130000000000000000",
+        "inflation": "0.001000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
@@ -329,9 +329,9 @@
     },
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
+        "signed_blocks_window": "10000",
         "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600s",
+        "downtime_jail_duration": "6000s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
       },
@@ -349,8 +349,8 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
-        "max_validators": 100,
+        "unbonding_time": "14400s",
+        "max_validators": 10,
         "max_entries": 7,
         "historical_entries": 10000,
         "bond_denom": "utbtsg",
@@ -397,7 +397,7 @@
     "params": {
       "block": {
         "max_bytes": "22020096",
-        "max_gas": "-1"
+        "max_gas": "50000000"
       },
       "evidence": {
         "max_age_num_blocks": "100000",

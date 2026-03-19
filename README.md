@@ -14,6 +14,6 @@ This repository contains the official genesis file for current and historical [B
 ## Latest Testnet
 | Chain-id  | Status  |   |   |   |
 |---|---|---|---|---|
-| [sub-1](bitsong-2b/README.md)    | UPCOMING  |   |   |   
+| [crescendo-1](testnet/crescendo-1/RUNBOOK.md)    | ACTIVE RUNBOOK  |   |   |
 |   |   |   |   |   |
 |   |   |   |   |   |

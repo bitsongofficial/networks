@@ -3,3 +3,10 @@
 .dokploy
 
 testnet/crescendo-1/accounts
+
+# opensrc - source code for packages
+opensrc/
+
+STATUS
+
+crescendo-1_tools
