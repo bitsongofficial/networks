@@ -1,11 +1,8 @@
-# Network Upgrades 
+# Network Upgrades
 
 ## Upgrades
-| Version  |   |   |   |   |
+
+| Current Version  |   |   |   |   |
 |---|---|---|---|---|
-| [v0.20.0](v0.20.0/guide.md)   | v020   |   |   |   |
-| [v0.21.0](v0.21.0/guide.md)   | v021   |   |   |   |
-| [manual](manual-upgrades/README.md)   |    |   |   |   |
-
-
-
+| [v0.24.0](v0.24.0/guide.md)   | v024   |   |   |   |
+ 

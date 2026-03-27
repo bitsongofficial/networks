@@ -1,0 +1,6 @@
+{
+    "binaries": {
+       "linux/arm64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.22.0/bitsongd-linux-arm64?checksum=sha256:734366c046657a13cfe1c8b953048e22015bfa4a5e97101d94eb094ff44fc4a8",
+       "linux/amd64": "https://github.com/permissionlessweb/go-bitsong/releases/download/v0.22.0/bitsongd-linux-amd64?checksum=sha256:4c259679283b6e0caae9adc9000fb2cc3fc5fc167dbf760de34ac3d4984459b0"
+    }
+}
